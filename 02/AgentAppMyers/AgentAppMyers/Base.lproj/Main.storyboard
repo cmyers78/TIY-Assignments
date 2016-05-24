@@ -25,7 +25,7 @@
                                 </constraints>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeK-GS-btB">
                                 <rect key="frame" x="193" y="150" width="215" height="46"/>
@@ -36,6 +36,9 @@
                                 <state key="normal" title="AUTHENTICATE">
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="authenticateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hr0-3M-2uk"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hDh-SE-gsd">
                                 <rect key="frame" x="20" y="90" width="560" height="30"/>
@@ -44,9 +47,9 @@
                                 </constraints>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlZ-Vy-jz8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlZ-Vy-jz8">
                                 <rect key="frame" x="0.0" y="228" width="600" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="XYq-ow-ujR"/>
@@ -91,7 +94,9 @@
                     </view>
                     <connections>
                         <outlet property="authenticateButton" destination="BeK-GS-btB" id="KdZ-rA-D0Q"/>
+                        <outlet property="passwordTextField" destination="hDh-SE-gsd" id="4wt-pL-6In"/>
                         <outlet property="userNameTextField" destination="siB-iT-3Zi" id="E1m-eC-hK9"/>
+                        <outlet property="welcomeLabel" destination="vlZ-Vy-jz8" id="HyC-EF-cFY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
