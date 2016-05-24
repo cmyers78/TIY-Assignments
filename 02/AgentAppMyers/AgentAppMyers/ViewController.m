@@ -11,6 +11,7 @@
 @interface ViewController () {
     NSString *agentName;
     NSString *password;
+    NSArray *listItems;
     
 }
 
@@ -35,18 +36,23 @@
     agentName = @"Christopher Myers";
     password = @"123456";
     
+    
+    listItems = [agentName componentsSeparatedByString:@" "];
+    
+    
 }
 
 - (void)authenticate {
     
     if ([self.userNameTextField.text isEqualToString:agentName] && [self.passwordTextField.text isEqualToString:password]) {
         
-        self.view.backgroundColor = [UIColor greenColor];
-        self.welcomeLabel.text = [NSString stringWithFormat:@"Welcome %@", agentName];
+        self.view.backgroundColor = [UIColor colorWithRed:107/255.0f green:142/255.0f blue:35/255.0f alpha:1];
+        
+        self.welcomeLabel.text = [NSString stringWithFormat:@"Welcome Agent %@", listItems[1]];
         
         
     } else {
-        self.view.backgroundColor = [UIColor redColor];
+        self.view.backgroundColor = [UIColor colorWithRed:222/255.0f green:15/255.0f blue:15/255.0f alpha:1];
         self.welcomeLabel.text = [NSString stringWithFormat:@"DENIED"];
         
         
