@@ -56,7 +56,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIYLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="yit-ft-7mE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIYLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yit-ft-7mE">
                                 <rect key="frame" x="180" y="327" width="240" height="212"/>
                             </imageView>
                         </subviews>
@@ -104,6 +104,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TIYLogo.png" width="240" height="212"/>
+        <image name="TIYLogo" width="240" height="212"/>
     </resources>
 </document>

@@ -13,9 +13,6 @@
 		C659F8881CF4CCEF00D93E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C659F8861CF4CCEF00D93E68 /* Main.storyboard */; };
 		C659F88A1CF4CCEF00D93E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C659F8891CF4CCEF00D93E68 /* Assets.xcassets */; };
 		C659F88D1CF4CCEF00D93E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C659F88B1CF4CCEF00D93E68 /* LaunchScreen.storyboard */; };
-		C659F8971CF4E2B600D93E68 /* TIYLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C659F8941CF4E2B600D93E68 /* TIYLogo.png */; };
-		C659F8981CF4E2B600D93E68 /* TIYLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C659F8951CF4E2B600D93E68 /* TIYLogo@2x.png */; };
-		C659F8991CF4E2B600D93E68 /* TIYLogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C659F8961CF4E2B600D93E68 /* TIYLogo@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +26,6 @@
 		C659F8891CF4CCEF00D93E68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C659F88C1CF4CCEF00D93E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C659F88E1CF4CCEF00D93E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C659F8941CF4E2B600D93E68 /* TIYLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TIYLogo.png; path = "../../../../TIY-Course/02--Good Morning, Agent/TIYLogo.png"; sourceTree = "<group>"; };
-		C659F8951CF4E2B600D93E68 /* TIYLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TIYLogo@2x.png"; path = "../../../../TIY-Course/02--Good Morning, Agent/TIYLogo@2x.png"; sourceTree = "<group>"; };
-		C659F8961CF4E2B600D93E68 /* TIYLogo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TIYLogo@3x.png"; path = "../../../../TIY-Course/02--Good Morning, Agent/TIYLogo@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +64,6 @@
 				C659F8841CF4CCEF00D93E68 /* ViewController.m */,
 				C659F8861CF4CCEF00D93E68 /* Main.storyboard */,
 				C659F8891CF4CCEF00D93E68 /* Assets.xcassets */,
-				C659F8941CF4E2B600D93E68 /* TIYLogo.png */,
-				C659F8951CF4E2B600D93E68 /* TIYLogo@2x.png */,
-				C659F8961CF4E2B600D93E68 /* TIYLogo@3x.png */,
 				C659F88B1CF4CCEF00D93E68 /* LaunchScreen.storyboard */,
 				C659F88E1CF4CCEF00D93E68 /* Info.plist */,
 				C659F87D1CF4CCEF00D93E68 /* Supporting Files */,
@@ -146,11 +137,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C659F88D1CF4CCEF00D93E68 /* LaunchScreen.storyboard in Resources */,
-				C659F8971CF4E2B600D93E68 /* TIYLogo.png in Resources */,
 				C659F88A1CF4CCEF00D93E68 /* Assets.xcassets in Resources */,
-				C659F8991CF4E2B600D93E68 /* TIYLogo@3x.png in Resources */,
 				C659F8881CF4CCEF00D93E68 /* Main.storyboard in Resources */,
-				C659F8981CF4E2B600D93E68 /* TIYLogo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
