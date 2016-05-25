@@ -57,7 +57,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIYLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="yit-ft-7mE">
-                                <rect key="frame" x="180" y="327" width="240" height="232"/>
+                                <rect key="frame" x="180" y="327" width="240" height="212"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -83,10 +83,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="LWb-94-1SP"/>
                                 <exclude reference="ZSf-gr-l4I"/>
                                 <exclude reference="aUp-bH-pkY"/>
+                                <exclude reference="LWb-94-1SP"/>
                                 <exclude reference="g9R-Lh-xaE"/>
+                                <exclude reference="Hti-cu-2Xe"/>
                             </mask>
                         </variation>
                     </view>

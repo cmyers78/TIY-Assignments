@@ -12,15 +12,11 @@
     NSString *agentName;
     NSString *password;
     NSArray *listItems;
-    
 }
 
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
-
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
-
 @property (weak, nonatomic) IBOutlet UIButton *authenticateButton;
-
 @property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
 
 @end
@@ -28,18 +24,12 @@
 @implementation ViewController
 
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     agentName = @"Christopher Myers";
     password = @"123456";
-    
-    
     listItems = [agentName componentsSeparatedByString:@" "];
-    
-    
 }
 
 - (void)authenticate {
@@ -50,25 +40,15 @@
         
         self.welcomeLabel.text = [NSString stringWithFormat:@"Welcome Agent %@", listItems[1]];
         
-        
     } else {
         self.view.backgroundColor = [UIColor colorWithRed:222/255.0f green:15/255.0f blue:15/255.0f alpha:1];
         self.welcomeLabel.text = [NSString stringWithFormat:@"DENIED"];
-        
-        
     }
-
-    
 }
 
 - (IBAction)authenticateButton:(UIButton *)sender {
 
-    
     [self authenticate];
-    
-    
-    
 }
-
 
 @end
