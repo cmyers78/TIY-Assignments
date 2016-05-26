@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -56,8 +57,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIYLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yit-ft-7mE">
-                                <rect key="frame" x="180" y="327" width="240" height="212"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIYLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yit-ft-7mE">
+                                <rect key="frame" x="180" y="340" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yit-ft-7mE" secondAttribute="height" multiplier="1:1" id="Uz9-OL-6Yj"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -65,8 +69,10 @@
                             <constraint firstItem="siB-iT-3Zi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4M9-8H-kN9"/>
                             <constraint firstItem="siB-iT-3Zi" firstAttribute="leading" secondItem="hDh-SE-gsd" secondAttribute="leading" id="BYQ-Ny-1f8"/>
                             <constraint firstItem="hDh-SE-gsd" firstAttribute="centerX" secondItem="BeK-GS-btB" secondAttribute="centerX" id="C5f-Y3-UOT"/>
+                            <constraint firstItem="yit-ft-7mE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FDB-8c-7jN"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yit-ft-7mE" secondAttribute="bottom" constant="41" id="Hti-cu-2Xe"/>
                             <constraint firstItem="BeK-GS-btB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="LWb-94-1SP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yit-ft-7mE" secondAttribute="bottom" constant="20" id="ObM-rL-4bg"/>
                             <constraint firstItem="vlZ-Vy-jz8" firstAttribute="top" secondItem="BeK-GS-btB" secondAttribute="bottom" constant="32" id="Qbb-Rx-jdM"/>
                             <constraint firstItem="siB-iT-3Zi" firstAttribute="trailing" secondItem="hDh-SE-gsd" secondAttribute="trailing" id="Qt9-eQ-XoH"/>
                             <constraint firstItem="BeK-GS-btB" firstAttribute="centerX" secondItem="vlZ-Vy-jz8" secondAttribute="centerX" id="TgV-ht-As2"/>
@@ -85,7 +91,9 @@
                             <mask key="constraints">
                                 <exclude reference="ZSf-gr-l4I"/>
                                 <exclude reference="aUp-bH-pkY"/>
+                                <exclude reference="wNo-Wf-8LL"/>
                                 <exclude reference="LWb-94-1SP"/>
+                                <exclude reference="ZOo-WL-Owj"/>
                                 <exclude reference="g9R-Lh-xaE"/>
                                 <exclude reference="Hti-cu-2Xe"/>
                             </mask>
