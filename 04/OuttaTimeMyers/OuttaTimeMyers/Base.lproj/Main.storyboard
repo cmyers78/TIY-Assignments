@@ -32,7 +32,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="MMM DD YYYY" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tnx-27-je0">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="MMDDYYYY" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tnx-27-je0">
                                 <rect key="frame" x="40" y="132" width="520" height="50"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -41,7 +41,7 @@
                                 </constraints>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="43"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="light" returnKeyType="send"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" keyboardAppearance="light" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="piY-IY-Z4M"/>
                                 </connections>
@@ -150,10 +150,78 @@
                     <view key="view" contentMode="scaleToFill" id="TXa-kl-Faj">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tardis-bttf.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DbM-q6-aGa">
+                                <rect key="frame" x="50" y="160" width="500" height="280"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Roads?  Where we're going, we don't need roads.&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zad-0b-Djd">
+                                <rect key="frame" x="40" y="40" width="520" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="519" id="M6I-nG-BKb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                <color key="textColor" red="0.29747406123485909" green="0.51690967225462092" blue="0.80506810897435899" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="M6I-nG-BKb"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5f-Ol-j1B">
+                                <rect key="frame" x="252" y="536" width="97" height="44"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <size key="titleShadowOffset" width="2" height="1"/>
+                                <state key="normal" title="RESTART">
+                                    <color key="titleColor" red="0.29747406119999997" green="0.51690967229999996" blue="0.80506810900000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uPp-bZ-g5d" kind="unwind" unwindAction="unwindSegue:" id="xNA-IF-Q3B"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aZJ-XK-wbJ" firstAttribute="top" secondItem="X5f-Ol-j1B" secondAttribute="bottom" constant="20" id="0jV-P2-jcF"/>
+                            <constraint firstItem="DbM-q6-aGa" firstAttribute="centerX" secondItem="TXa-kl-Faj" secondAttribute="centerX" id="2zj-JO-TPf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zad-0b-Djd" secondAttribute="trailing" constant="20" id="3Zn-q1-aXs"/>
+                            <constraint firstItem="zad-0b-Djd" firstAttribute="top" secondItem="TXa-kl-Faj" secondAttribute="topMargin" constant="20" id="Rz1-cu-RGt"/>
+                            <constraint firstItem="DbM-q6-aGa" firstAttribute="top" secondItem="zad-0b-Djd" secondAttribute="bottom" constant="20" id="TdX-HC-0m0"/>
+                            <constraint firstItem="DbM-q6-aGa" firstAttribute="top" secondItem="RPl-Lw-GAJ" secondAttribute="bottom" constant="140" id="Ujd-NK-XfP"/>
+                            <constraint firstItem="DbM-q6-aGa" firstAttribute="centerY" secondItem="TXa-kl-Faj" secondAttribute="centerY" id="WgY-d6-TPE"/>
+                            <constraint firstItem="zad-0b-Djd" firstAttribute="centerX" secondItem="TXa-kl-Faj" secondAttribute="centerX" id="YPW-HP-4O5"/>
+                            <constraint firstItem="zad-0b-Djd" firstAttribute="leading" secondItem="TXa-kl-Faj" secondAttribute="leadingMargin" constant="20" id="ce9-zz-Okj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DbM-q6-aGa" secondAttribute="trailing" constant="30" id="clp-EL-flD"/>
+                            <constraint firstItem="zad-0b-Djd" firstAttribute="centerX" secondItem="TXa-kl-Faj" secondAttribute="centerX" id="eRX-8B-Dmk"/>
+                            <constraint firstItem="zad-0b-Djd" firstAttribute="leading" secondItem="TXa-kl-Faj" secondAttribute="leadingMargin" constant="20" id="fYz-k1-sit"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zad-0b-Djd" secondAttribute="trailing" constant="21" id="fZU-Ec-c8C"/>
+                            <constraint firstItem="zad-0b-Djd" firstAttribute="top" secondItem="RPl-Lw-GAJ" secondAttribute="bottom" constant="20" id="nbh-8h-xI4"/>
+                            <constraint firstItem="DbM-q6-aGa" firstAttribute="top" secondItem="zad-0b-Djd" secondAttribute="bottom" constant="20" id="oMb-L9-V6z"/>
+                            <constraint firstItem="X5f-Ol-j1B" firstAttribute="centerX" secondItem="TXa-kl-Faj" secondAttribute="centerX" id="r33-tY-n3i"/>
+                            <constraint firstItem="zad-0b-Djd" firstAttribute="top" secondItem="RPl-Lw-GAJ" secondAttribute="bottom" constant="20" id="tAy-fx-6cj"/>
+                            <constraint firstItem="zad-0b-Djd" firstAttribute="leading" secondItem="TXa-kl-Faj" secondAttribute="leadingMargin" constant="20" id="wBN-IN-lMk"/>
+                            <constraint firstItem="DbM-q6-aGa" firstAttribute="leading" secondItem="TXa-kl-Faj" secondAttribute="leadingMargin" constant="30" id="zDR-KN-TWb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zad-0b-Djd" secondAttribute="trailing" constant="20" id="zmb-zd-ZR6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3Zn-q1-aXs"/>
+                                <exclude reference="Rz1-cu-RGt"/>
+                                <exclude reference="YPW-HP-4O5"/>
+                                <exclude reference="eRX-8B-Dmk"/>
+                                <exclude reference="fYz-k1-sit"/>
+                                <exclude reference="fZU-Ec-c8C"/>
+                                <exclude reference="tAy-fx-6cj"/>
+                                <exclude reference="wBN-IN-lMk"/>
+                                <exclude reference="TdX-HC-0m0"/>
+                                <exclude reference="oMb-L9-V6z"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTe-xb-oKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="uPp-bZ-g5d" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1842" y="337"/>
         </scene>
@@ -176,4 +244,7 @@
             <point key="canvasLocation" x="245" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tardis-bttf.jpg" width="762" height="539"/>
+    </resources>
 </document>

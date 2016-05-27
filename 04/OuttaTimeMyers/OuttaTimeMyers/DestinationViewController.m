@@ -8,11 +8,9 @@
 
 #import "DestinationViewController.h"
 
-@interface DestinationViewController () <UITextFieldDelegate>
-{ int milesPerHour;
+@interface DestinationViewController () <UITextFieldDelegate> {
+    int milesPerHour;
 }
-
-
 
 @property (weak, nonatomic) IBOutlet UITextField *enteredTimeText;
 @property (weak, nonatomic) IBOutlet UILabel *presentTime;
@@ -34,12 +32,22 @@
     self.formattedDate.dateFormat = @"MMM d, yyyy";
     NSDate *today = [NSDate date];
     self.presentTime.text = [self.formattedDate stringFromDate:today];
+
 }
 
+- (void) enteredDate {
+    
+    self.formattedDate.dateFormat = @"MMddyyyy";
+    NSString *dateEntered = self.enteredTimeText.text;
+    NSDate *theDate = [self.formattedDate dateFromString:dateEntered];
+    self.formattedDate.dateFormat = @"MMM d, yyyy";
+    self.enteredTimeText.text = [self.formattedDate stringFromDate:theDate];
+    
+}
 // this method will remove keyboard from the app
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self enteredDate];
     [self.enteredTimeText resignFirstResponder];
-    
     return YES;
 }
 
@@ -47,18 +55,33 @@
     milesPerHour += 1;
     if (milesPerHour == 88) {
         [self.timerMPH invalidate];
+        [self performSegueWithIdentifier:@"popupSegue" sender:self];
     }
     self.speedometer.text = [NSString stringWithFormat:@"%i MPH", milesPerHour];
 }
 
+- (void) reset {
+    
+    self.lastTimeDeparted.text = @"--- -- ----";
+    self.enteredTimeText.text = @"";
+    milesPerHour = 0;
+    self.speedometer.text = @"0 MPH";
+}
+
+- (IBAction)unwindSegue:(UIStoryboardSegue *) segue {
+    NSLog(@"unwindSegue");
+    
+    [self reset];
+}
 
 - (IBAction)travelButton:(UIButton *)sender {
     
     self.lastTimeDeparted.text = self.presentTime.text;
     milesPerHour = 0;
     float speed = 0.1;
-    self.timerMPH = [NSTimer scheduledTimerWithTimeInterval:speed target:self selector:@selector(updateMiles) userInfo:nil repeats:YES];
-    
-}
+    self.timerMPH = [NSTimer scheduledTimerWithTimeInterval:speed
+                    target:self selector:@selector(updateMiles)
+                    userInfo:nil repeats:YES];
+    }
 
 @end
