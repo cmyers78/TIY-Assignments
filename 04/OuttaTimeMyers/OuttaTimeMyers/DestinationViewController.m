@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *speedometer;
 @property (strong, nonatomic) NSDateFormatter *formattedDate;
 @property (strong, nonatomic) NSTimer *timerMPH;
+@property (strong, nonatomic) AVAudioPlayer *player;
+
 
 @end
 
@@ -25,6 +27,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"BTTF" ofType:@"m4a"];
+    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+    
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL error:nil];
+    self.player.numberOfLoops = -1;
+    self.player.volume = 0.60;
+    
+    [self.player play];
     
     [self.enteredTimeText setValue:[UIColor colorWithRed:255.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0] forKeyPath:@"_placeholderLabel.textColor"];
     
@@ -55,6 +66,7 @@
     milesPerHour += 1;
     if (milesPerHour == 88) {
         [self.timerMPH invalidate];
+        [self.player stop];
         [self performSegueWithIdentifier:@"popupSegue" sender:self];
     }
     self.speedometer.text = [NSString stringWithFormat:@"%i MPH", milesPerHour];
@@ -66,6 +78,8 @@
     self.enteredTimeText.text = @"";
     milesPerHour = 0;
     self.speedometer.text = @"0 MPH";
+    [self.player play];
+    
 }
 
 - (IBAction)unwindSegue:(UIStoryboardSegue *) segue {
