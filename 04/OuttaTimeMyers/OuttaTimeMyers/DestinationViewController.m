@@ -33,7 +33,7 @@
     
     self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL error:nil];
     self.player.numberOfLoops = -1;
-    self.player.volume = 0.60;
+    self.player.volume = 0.40;
     
     [self.player play];
     
@@ -66,11 +66,12 @@
     milesPerHour += 1;
     if (milesPerHour == 88) {
         [self.timerMPH invalidate];
-        [self.player stop];
         [self performSegueWithIdentifier:@"popupSegue" sender:self];
-    }
+        self.player.volume = 1.0;
+   }
     self.speedometer.text = [NSString stringWithFormat:@"%i MPH", milesPerHour];
 }
+
 
 - (void) reset {
     
@@ -78,7 +79,9 @@
     self.enteredTimeText.text = @"";
     milesPerHour = 0;
     self.speedometer.text = @"0 MPH";
-    [self.player play];
+    //[self.player play];
+    self.player.volume = 0.4;
+    
     
 }
 
