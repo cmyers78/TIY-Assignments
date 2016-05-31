@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C68161FF1CFE1DAB00987EDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C68161FE1CFE1DAB00987EDD /* main.m */; };
+		C68162021CFE1DAB00987EDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C68162011CFE1DAB00987EDD /* AppDelegate.m */; };
+		C68162051CFE1DAB00987EDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68162041CFE1DAB00987EDD /* ViewController.m */; };
+		C68162081CFE1DAB00987EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68162061CFE1DAB00987EDD /* Main.storyboard */; };
+		C681620A1CFE1DAB00987EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68162091CFE1DAB00987EDD /* Assets.xcassets */; };
+		C681620D1CFE1DAB00987EDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C681620B1CFE1DAB00987EDD /* LaunchScreen.storyboard */; };
+		C68162161CFE202400987EDD /* CharacterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68162151CFE202400987EDD /* CharacterDetailViewController.m */; };
+		C681621A1CFE2B5600987EDD /* SWCharacterCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = C68162191CFE2B5600987EDD /* SWCharacterCreation.m */; };
+		C68162231CFE3DAE00987EDD /* c3po.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C681621B1CFE3DAE00987EDD /* c3po.jpg */; };
+		C68162241CFE3DAE00987EDD /* chewie.png in Resources */ = {isa = PBXBuildFile; fileRef = C681621C1CFE3DAE00987EDD /* chewie.png */; };
+		C68162251CFE3DAE00987EDD /* darth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C681621D1CFE3DAE00987EDD /* darth.jpeg */; };
+		C68162261CFE3DAE00987EDD /* han.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C681621E1CFE3DAE00987EDD /* han.jpg */; };
+		C68162271CFE3DAE00987EDD /* leia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C681621F1CFE3DAE00987EDD /* leia.jpg */; };
+		C68162281CFE3DAE00987EDD /* luke.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C68162201CFE3DAE00987EDD /* luke.jpeg */; };
+		C68162291CFE3DAE00987EDD /* obi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C68162211CFE3DAE00987EDD /* obi.jpg */; };
+		C681622A1CFE3DAE00987EDD /* r2d2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C68162221CFE3DAE00987EDD /* r2d2.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C68161FA1CFE1DAB00987EDD /* StarWarsCharactersMyers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsCharactersMyers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C68161FE1CFE1DAB00987EDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C68162001CFE1DAB00987EDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C68162011CFE1DAB00987EDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C68162031CFE1DAB00987EDD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C68162041CFE1DAB00987EDD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C68162071CFE1DAB00987EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C68162091CFE1DAB00987EDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C681620C1CFE1DAB00987EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C681620E1CFE1DAB00987EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C68162141CFE202400987EDD /* CharacterDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterDetailViewController.h; sourceTree = "<group>"; };
+		C68162151CFE202400987EDD /* CharacterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterDetailViewController.m; sourceTree = "<group>"; };
+		C68162181CFE2B5600987EDD /* SWCharacterCreation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCharacterCreation.h; sourceTree = "<group>"; };
+		C68162191CFE2B5600987EDD /* SWCharacterCreation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCharacterCreation.m; sourceTree = "<group>"; };
+		C681621B1CFE3DAE00987EDD /* c3po.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c3po.jpg; sourceTree = "<group>"; };
+		C681621C1CFE3DAE00987EDD /* chewie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chewie.png; sourceTree = "<group>"; };
+		C681621D1CFE3DAE00987EDD /* darth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darth.jpeg; sourceTree = "<group>"; };
+		C681621E1CFE3DAE00987EDD /* han.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = han.jpg; sourceTree = "<group>"; };
+		C681621F1CFE3DAE00987EDD /* leia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leia.jpg; sourceTree = "<group>"; };
+		C68162201CFE3DAE00987EDD /* luke.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = luke.jpeg; sourceTree = "<group>"; };
+		C68162211CFE3DAE00987EDD /* obi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = obi.jpg; sourceTree = "<group>"; };
+		C68162221CFE3DAE00987EDD /* r2d2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = r2d2.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C68161F71CFE1DAB00987EDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C68161F11CFE1DAB00987EDD = {
+			isa = PBXGroup;
+			children = (
+				C68161FC1CFE1DAB00987EDD /* StarWarsCharactersMyers */,
+				C68161FB1CFE1DAB00987EDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C68161FB1CFE1DAB00987EDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C68161FA1CFE1DAB00987EDD /* StarWarsCharactersMyers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C68161FC1CFE1DAB00987EDD /* StarWarsCharactersMyers */ = {
+			isa = PBXGroup;
+			children = (
+				C68162001CFE1DAB00987EDD /* AppDelegate.h */,
+				C68162011CFE1DAB00987EDD /* AppDelegate.m */,
+				C68162171CFE212B00987EDD /* Controllers */,
+				C68162061CFE1DAB00987EDD /* Main.storyboard */,
+				C68162091CFE1DAB00987EDD /* Assets.xcassets */,
+				C681622B1CFE3DB800987EDD /* Images */,
+				C681620B1CFE1DAB00987EDD /* LaunchScreen.storyboard */,
+				C681620E1CFE1DAB00987EDD /* Info.plist */,
+				C68161FD1CFE1DAB00987EDD /* Supporting Files */,
+			);
+			path = StarWarsCharactersMyers;
+			sourceTree = "<group>";
+		};
+		C68161FD1CFE1DAB00987EDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C68161FE1CFE1DAB00987EDD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C68162171CFE212B00987EDD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C68162141CFE202400987EDD /* CharacterDetailViewController.h */,
+				C68162151CFE202400987EDD /* CharacterDetailViewController.m */,
+				C68162031CFE1DAB00987EDD /* ViewController.h */,
+				C68162041CFE1DAB00987EDD /* ViewController.m */,
+				C68162181CFE2B5600987EDD /* SWCharacterCreation.h */,
+				C68162191CFE2B5600987EDD /* SWCharacterCreation.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C681622B1CFE3DB800987EDD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C681621B1CFE3DAE00987EDD /* c3po.jpg */,
+				C681621C1CFE3DAE00987EDD /* chewie.png */,
+				C681621D1CFE3DAE00987EDD /* darth.jpeg */,
+				C681621E1CFE3DAE00987EDD /* han.jpg */,
+				C681621F1CFE3DAE00987EDD /* leia.jpg */,
+				C68162201CFE3DAE00987EDD /* luke.jpeg */,
+				C68162211CFE3DAE00987EDD /* obi.jpg */,
+				C68162221CFE3DAE00987EDD /* r2d2.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C68161F91CFE1DAB00987EDD /* StarWarsCharactersMyers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C68162111CFE1DAB00987EDD /* Build configuration list for PBXNativeTarget "StarWarsCharactersMyers" */;
+			buildPhases = (
+				C68161F61CFE1DAB00987EDD /* Sources */,
+				C68161F71CFE1DAB00987EDD /* Frameworks */,
+				C68161F81CFE1DAB00987EDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarWarsCharactersMyers;
+			productName = StarWarsCharactersMyers;
+			productReference = C68161FA1CFE1DAB00987EDD /* StarWarsCharactersMyers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C68161F21CFE1DAB00987EDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Dragoman Developers, LLC";
+				TargetAttributes = {
+					C68161F91CFE1DAB00987EDD = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = XYW89PFS48;
+					};
+				};
+			};
+			buildConfigurationList = C68161F51CFE1DAB00987EDD /* Build configuration list for PBXProject "StarWarsCharactersMyers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C68161F11CFE1DAB00987EDD;
+			productRefGroup = C68161FB1CFE1DAB00987EDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C68161F91CFE1DAB00987EDD /* StarWarsCharactersMyers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C68161F81CFE1DAB00987EDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C681622A1CFE3DAE00987EDD /* r2d2.jpg in Resources */,
+				C68162231CFE3DAE00987EDD /* c3po.jpg in Resources */,
+				C681620D1CFE1DAB00987EDD /* LaunchScreen.storyboard in Resources */,
+				C68162271CFE3DAE00987EDD /* leia.jpg in Resources */,
+				C681620A1CFE1DAB00987EDD /* Assets.xcassets in Resources */,
+				C68162281CFE3DAE00987EDD /* luke.jpeg in Resources */,
+				C68162251CFE3DAE00987EDD /* darth.jpeg in Resources */,
+				C68162291CFE3DAE00987EDD /* obi.jpg in Resources */,
+				C68162081CFE1DAB00987EDD /* Main.storyboard in Resources */,
+				C68162261CFE3DAE00987EDD /* han.jpg in Resources */,
+				C68162241CFE3DAE00987EDD /* chewie.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C68161F61CFE1DAB00987EDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C681621A1CFE2B5600987EDD /* SWCharacterCreation.m in Sources */,
+				C68162051CFE1DAB00987EDD /* ViewController.m in Sources */,
+				C68162161CFE202400987EDD /* CharacterDetailViewController.m in Sources */,
+				C68162021CFE1DAB00987EDD /* AppDelegate.m in Sources */,
+				C68161FF1CFE1DAB00987EDD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C68162061CFE1DAB00987EDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C68162071CFE1DAB00987EDD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C681620B1CFE1DAB00987EDD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C681620C1CFE1DAB00987EDD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C681620F1CFE1DAB00987EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C68162101CFE1DAB00987EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C68162121CFE1DAB00987EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = StarWarsCharactersMyers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dragomandevelopers.StarWarsCharactersMyers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		C68162131CFE1DAB00987EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = StarWarsCharactersMyers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dragomandevelopers.StarWarsCharactersMyers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C68161F51CFE1DAB00987EDD /* Build configuration list for PBXProject "StarWarsCharactersMyers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C681620F1CFE1DAB00987EDD /* Debug */,
+				C68162101CFE1DAB00987EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C68162111CFE1DAB00987EDD /* Build configuration list for PBXNativeTarget "StarWarsCharactersMyers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C68162121CFE1DAB00987EDD /* Debug */,
+				C68162131CFE1DAB00987EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C68161F21CFE1DAB00987EDD /* Project object */;
+}
