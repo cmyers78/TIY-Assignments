@@ -29,7 +29,7 @@
     self.characterArray = [[NSMutableArray alloc] init];
     
     // creates a new SW Character object
-    SWCharacterCreation *han = [[SWCharacterCreation alloc] initWithName:@"Han Solo" spacecraft:@"Millenium Falcon"];
+    SWCharacterCreation *han = [[SWCharacterCreation alloc] initWithName:@"Han Solo" spacecraft:@"Millennium Falcon"];
     
     // adds the object to the array
     [self.characterArray addObject:han];
@@ -49,7 +49,7 @@
     SWCharacterCreation *chewie = [[SWCharacterCreation alloc] initWithName:@"Chewbacca" spacecraft:@"Havoc Marauder"];
     [self.characterArray addObject:chewie];
     
-    SWCharacterCreation *obi = [[SWCharacterCreation alloc] initWithName:@"Obi Won Kenobi" spacecraft:@"Freeco Bike"];
+    SWCharacterCreation *obi = [[SWCharacterCreation alloc] initWithName:@"Obi Wan Kenobi" spacecraft:@"Freeco Bike"];
     [self.characterArray addObject:obi];
     
     SWCharacterCreation *darth = [[SWCharacterCreation alloc] initWithName:@"Darth Vader" spacecraft:@"TIE Fighter"];

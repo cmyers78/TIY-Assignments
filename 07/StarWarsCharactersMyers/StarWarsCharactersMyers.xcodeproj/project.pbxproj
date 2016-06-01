@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C66CB55C1CFE7D5D005E68E4 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C66CB55B1CFE7D5D005E68E4 /* Starjedi.ttf */; };
 		C68161FF1CFE1DAB00987EDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C68161FE1CFE1DAB00987EDD /* main.m */; };
 		C68162021CFE1DAB00987EDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C68162011CFE1DAB00987EDD /* AppDelegate.m */; };
 		C68162051CFE1DAB00987EDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68162041CFE1DAB00987EDD /* ViewController.m */; };
@@ -15,17 +16,10 @@
 		C681620D1CFE1DAB00987EDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C681620B1CFE1DAB00987EDD /* LaunchScreen.storyboard */; };
 		C68162161CFE202400987EDD /* CharacterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68162151CFE202400987EDD /* CharacterDetailViewController.m */; };
 		C681621A1CFE2B5600987EDD /* SWCharacterCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = C68162191CFE2B5600987EDD /* SWCharacterCreation.m */; };
-		C68162231CFE3DAE00987EDD /* c3po.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C681621B1CFE3DAE00987EDD /* c3po.jpg */; };
-		C68162241CFE3DAE00987EDD /* chewie.png in Resources */ = {isa = PBXBuildFile; fileRef = C681621C1CFE3DAE00987EDD /* chewie.png */; };
-		C68162251CFE3DAE00987EDD /* darth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C681621D1CFE3DAE00987EDD /* darth.jpeg */; };
-		C68162261CFE3DAE00987EDD /* han.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C681621E1CFE3DAE00987EDD /* han.jpg */; };
-		C68162271CFE3DAE00987EDD /* leia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C681621F1CFE3DAE00987EDD /* leia.jpg */; };
-		C68162281CFE3DAE00987EDD /* luke.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C68162201CFE3DAE00987EDD /* luke.jpeg */; };
-		C68162291CFE3DAE00987EDD /* obi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C68162211CFE3DAE00987EDD /* obi.jpg */; };
-		C681622A1CFE3DAE00987EDD /* r2d2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C68162221CFE3DAE00987EDD /* r2d2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C66CB55B1CFE7D5D005E68E4 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		C68161FA1CFE1DAB00987EDD /* StarWarsCharactersMyers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsCharactersMyers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68161FE1CFE1DAB00987EDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C68162001CFE1DAB00987EDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,14 +34,6 @@
 		C68162151CFE202400987EDD /* CharacterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterDetailViewController.m; sourceTree = "<group>"; };
 		C68162181CFE2B5600987EDD /* SWCharacterCreation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCharacterCreation.h; sourceTree = "<group>"; };
 		C68162191CFE2B5600987EDD /* SWCharacterCreation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCharacterCreation.m; sourceTree = "<group>"; };
-		C681621B1CFE3DAE00987EDD /* c3po.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c3po.jpg; sourceTree = "<group>"; };
-		C681621C1CFE3DAE00987EDD /* chewie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chewie.png; sourceTree = "<group>"; };
-		C681621D1CFE3DAE00987EDD /* darth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darth.jpeg; sourceTree = "<group>"; };
-		C681621E1CFE3DAE00987EDD /* han.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = han.jpg; sourceTree = "<group>"; };
-		C681621F1CFE3DAE00987EDD /* leia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leia.jpg; sourceTree = "<group>"; };
-		C68162201CFE3DAE00987EDD /* luke.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = luke.jpeg; sourceTree = "<group>"; };
-		C68162211CFE3DAE00987EDD /* obi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = obi.jpg; sourceTree = "<group>"; };
-		C68162221CFE3DAE00987EDD /* r2d2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = r2d2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +71,7 @@
 				C68162171CFE212B00987EDD /* Controllers */,
 				C68162061CFE1DAB00987EDD /* Main.storyboard */,
 				C68162091CFE1DAB00987EDD /* Assets.xcassets */,
-				C681622B1CFE3DB800987EDD /* Images */,
+				C66CB55B1CFE7D5D005E68E4 /* Starjedi.ttf */,
 				C681620B1CFE1DAB00987EDD /* LaunchScreen.storyboard */,
 				C681620E1CFE1DAB00987EDD /* Info.plist */,
 				C68161FD1CFE1DAB00987EDD /* Supporting Files */,
@@ -112,21 +98,6 @@
 				C68162191CFE2B5600987EDD /* SWCharacterCreation.m */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		C681622B1CFE3DB800987EDD /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				C681621B1CFE3DAE00987EDD /* c3po.jpg */,
-				C681621C1CFE3DAE00987EDD /* chewie.png */,
-				C681621D1CFE3DAE00987EDD /* darth.jpeg */,
-				C681621E1CFE3DAE00987EDD /* han.jpg */,
-				C681621F1CFE3DAE00987EDD /* leia.jpg */,
-				C68162201CFE3DAE00987EDD /* luke.jpeg */,
-				C68162211CFE3DAE00987EDD /* obi.jpg */,
-				C68162221CFE3DAE00987EDD /* r2d2.jpg */,
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,17 +158,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C681622A1CFE3DAE00987EDD /* r2d2.jpg in Resources */,
-				C68162231CFE3DAE00987EDD /* c3po.jpg in Resources */,
 				C681620D1CFE1DAB00987EDD /* LaunchScreen.storyboard in Resources */,
-				C68162271CFE3DAE00987EDD /* leia.jpg in Resources */,
 				C681620A1CFE1DAB00987EDD /* Assets.xcassets in Resources */,
-				C68162281CFE3DAE00987EDD /* luke.jpeg in Resources */,
-				C68162251CFE3DAE00987EDD /* darth.jpeg in Resources */,
-				C68162291CFE3DAE00987EDD /* obi.jpg in Resources */,
+				C66CB55C1CFE7D5D005E68E4 /* Starjedi.ttf in Resources */,
 				C68162081CFE1DAB00987EDD /* Main.storyboard in Resources */,
-				C68162261CFE3DAE00987EDD /* han.jpg in Resources */,
-				C68162241CFE3DAE00987EDD /* chewie.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +331,7 @@
 				C68162131CFE1DAB00987EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

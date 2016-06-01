@@ -3,7 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Starjedi.ttf">
+            <string>StarJedi</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -65,8 +71,50 @@
                     <view key="view" contentMode="scaleToFill" id="qVc-KC-aqm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQr-6K-CG7">
+                                <rect key="frame" x="40" y="300" width="520" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMe-26-mqW">
+                                <rect key="frame" x="40" y="350" width="520" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUh-xy-z75">
+                                <rect key="frame" x="157" y="84" width="287.5" height="75"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="47"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="eMe-26-mqW" secondAttribute="trailing" constant="20" id="41b-hL-NaR"/>
+                            <constraint firstItem="eMe-26-mqW" firstAttribute="leading" secondItem="qVc-KC-aqm" secondAttribute="leadingMargin" constant="20" id="Bxt-5o-iA1"/>
+                            <constraint firstItem="oUh-xy-z75" firstAttribute="centerX" secondItem="qVc-KC-aqm" secondAttribute="centerX" id="G3L-F3-Io0"/>
+                            <constraint firstItem="oUh-xy-z75" firstAttribute="top" secondItem="8vS-4j-U3D" secondAttribute="bottom" constant="40" id="H7d-bE-d9s"/>
+                            <constraint firstItem="oUh-xy-z75" firstAttribute="top" secondItem="8vS-4j-U3D" secondAttribute="bottom" constant="20" id="X8r-g8-vDF"/>
+                            <constraint firstItem="AQr-6K-CG7" firstAttribute="leading" secondItem="qVc-KC-aqm" secondAttribute="leadingMargin" constant="20" id="YAv-03-meI"/>
+                            <constraint firstItem="eMe-26-mqW" firstAttribute="top" secondItem="AQr-6K-CG7" secondAttribute="bottom" constant="50" id="bE1-Ji-wOO"/>
+                            <constraint firstItem="eMe-26-mqW" firstAttribute="centerX" secondItem="qVc-KC-aqm" secondAttribute="centerX" id="fV6-6b-YKh"/>
+                            <constraint firstItem="AQr-6K-CG7" firstAttribute="centerY" secondItem="qVc-KC-aqm" secondAttribute="centerY" id="hdG-4H-e6o"/>
+                            <constraint firstItem="AQr-6K-CG7" firstAttribute="centerX" secondItem="qVc-KC-aqm" secondAttribute="centerX" id="lsF-iP-dys"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AQr-6K-CG7" secondAttribute="trailing" constant="20" id="uV2-c0-nN3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="H7d-bE-d9s"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="AQr-6K-CG7" id="Oij-ef-9AV"/>
+                        <outlet property="spacecraftLabel" destination="eMe-26-mqW" id="gLw-42-m6J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjI-WO-g5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
