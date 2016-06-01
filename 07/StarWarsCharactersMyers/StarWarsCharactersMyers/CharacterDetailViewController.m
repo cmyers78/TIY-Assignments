@@ -23,7 +23,7 @@
 @implementation CharacterDetailViewController
 
 - (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:YES];
+    [super viewDidAppear:animated];
     
 
     self.nameLabel.text = self.theCharacter.name;

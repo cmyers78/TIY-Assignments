@@ -90,6 +90,14 @@
     
     if ([segue.identifier isEqualToString:@"segueToInfo"]) {
         
+        
+        // This gives you a pointer to the upcoming destination View Controller
+        // theCharacter is created in the 2nd view controllers
+        // this code below links our currentCharacter object (and info) to
+        // the new "theCharacter" object created on the 2nd view controller
+        // both currentCharacter and theCharacter must pull their information from
+        // SWCharacterCreation file
+        
         CharacterDetailViewController *viewController = (CharacterDetailViewController *) segue.destinationViewController;
         viewController.theCharacter = self.currentCharacter;
         
