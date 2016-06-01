@@ -57,18 +57,23 @@
     
 }
 
+    // determines the number of rows we need based on the size of the array we created
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
         return [self.characterArray count];
 }
+
+    // customizes the appearance of the table view.  grabs information from the array and
+    // places it into its corresponding cell
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"StarWarsCell" forIndexPath:indexPath];
     
-    // takes an object an pulls it out of the array
+    // takes an object an pulls it out of the array.  Since it's an array object, we need
+    // to turn it into a string to update the text.  This accomplishes it.
     self.currentCharacter = [self.characterArray objectAtIndex:indexPath.row];
     
-    // takes the object pulled out and asks for its name property
+    // takes the object pulled out and asks for its NSString name property
     cell.textLabel.text = self.currentCharacter.name;
     
     

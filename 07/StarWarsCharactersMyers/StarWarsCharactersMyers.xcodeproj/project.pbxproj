@@ -68,6 +68,7 @@
 			children = (
 				C68162001CFE1DAB00987EDD /* AppDelegate.h */,
 				C68162011CFE1DAB00987EDD /* AppDelegate.m */,
+				C6F594FA1CFF4ACB004B9031 /* Modal */,
 				C68162171CFE212B00987EDD /* Controllers */,
 				C68162061CFE1DAB00987EDD /* Main.storyboard */,
 				C68162091CFE1DAB00987EDD /* Assets.xcassets */,
@@ -94,10 +95,17 @@
 				C68162151CFE202400987EDD /* CharacterDetailViewController.m */,
 				C68162031CFE1DAB00987EDD /* ViewController.h */,
 				C68162041CFE1DAB00987EDD /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C6F594FA1CFF4ACB004B9031 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
 				C68162181CFE2B5600987EDD /* SWCharacterCreation.h */,
 				C68162191CFE2B5600987EDD /* SWCharacterCreation.m */,
 			);
-			name = Controllers;
+			name = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

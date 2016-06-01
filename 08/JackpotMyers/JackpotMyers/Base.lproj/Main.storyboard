@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f1G-3s-f9a">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Jackpot Table View Controller-->
+        <scene sceneID="3uB-lO-QTf">
+            <objects>
+                <tableViewController id="SjY-xH-f1d" customClass="JackpotTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pbN-xC-9TV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ticketCell" id="4qd-Ye-l2e">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4qd-Ye-l2e" id="dza-If-mRt">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SjY-xH-f1d" id="86g-8r-MMH"/>
+                            <outlet property="delegate" destination="SjY-xH-f1d" id="cMx-C7-zNr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="NlJ-Ca-GPa">
+                        <barButtonItem key="leftBarButtonItem" title="Check Ticket" id="Xh3-I6-3Q1">
+                            <connections>
+                                <action selector="checkTicketPressed:" destination="SjY-xH-f1d" id="Djn-aH-Oza"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xGl-aq-mAc">
+                            <connections>
+                                <action selector="addTicket:" destination="SjY-xH-f1d" id="zOq-it-kEU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06K-2J-JXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1213" y="291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="edX-0x-nkb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f1G-3s-f9a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M13-db-5DJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SjY-xH-f1d" kind="relationship" relationship="rootViewController" id="3sN-Hr-rWD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6GQ-g8-WMM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="291"/>
+        </scene>
+    </scenes>
+</document>
