@@ -12,6 +12,6 @@
 @interface CheckTicketViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
-
-@property (strong, nonatomic) Ticket * winningTicket;
+@property (strong, nonatomic) Ticket * checkedTicket;
+@property (strong, nonatomic) Ticket * winningTicketJP;
 @end

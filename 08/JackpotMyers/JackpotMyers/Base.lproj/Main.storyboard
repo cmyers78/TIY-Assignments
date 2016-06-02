@@ -66,17 +66,32 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66x-lM-mgk">
                                 <rect key="frame" x="20" y="540" width="560" height="30"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="XHT-BP-Ca6" kind="unwind" unwindAction="unwindSegue:" id="WA2-cl-wgP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEn-eE-QUP">
                                 <rect key="frame" x="20" y="50" width="560" height="30"/>
                                 <state key="normal" title="Check Ticket"/>
+                                <connections>
+                                    <action selector="checkTicketPressed:" destination="kWM-V3-8XO" eventType="touchUpInside" id="6GZ-sk-vbZ"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your outcome awaits..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oov-qh-geI">
+                                <rect key="frame" x="20" y="100" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="oov-qh-geI" firstAttribute="top" secondItem="BEn-eE-QUP" secondAttribute="bottom" constant="20" id="4ac-xH-HFd"/>
                             <constraint firstItem="BEn-eE-QUP" firstAttribute="centerX" secondItem="GYf-QJ-bEY" secondAttribute="centerX" id="8UH-bD-4YA"/>
                             <constraint firstItem="66x-lM-mgk" firstAttribute="leading" secondItem="GYf-QJ-bEY" secondAttribute="leading" constant="20" id="8a0-UR-jba"/>
+                            <constraint firstItem="oov-qh-geI" firstAttribute="centerX" secondItem="GYf-QJ-bEY" secondAttribute="centerX" id="DI2-en-fGJ"/>
                             <constraint firstItem="BEn-eE-QUP" firstAttribute="top" secondItem="eSP-aV-um2" secondAttribute="bottom" constant="30" id="F7B-1q-zOA"/>
+                            <constraint firstItem="oov-qh-geI" firstAttribute="leading" secondItem="GYf-QJ-bEY" secondAttribute="leading" constant="20" id="GBx-rW-z5m"/>
                             <constraint firstItem="66x-lM-mgk" firstAttribute="centerX" secondItem="GYf-QJ-bEY" secondAttribute="centerX" id="Qxg-hD-C3b"/>
                             <constraint firstItem="BEn-eE-QUP" firstAttribute="leading" secondItem="GYf-QJ-bEY" secondAttribute="leading" constant="20" id="UC1-KH-4TV"/>
                             <constraint firstItem="96C-0z-gKe" firstAttribute="centerX" secondItem="GYf-QJ-bEY" secondAttribute="centerX" id="Yq9-bm-LcC"/>
@@ -84,15 +99,18 @@
                             <constraint firstItem="96C-0z-gKe" firstAttribute="centerY" secondItem="GYf-QJ-bEY" secondAttribute="centerY" id="jkM-id-np4"/>
                             <constraint firstAttribute="trailing" secondItem="96C-0z-gKe" secondAttribute="trailing" constant="10" id="nOr-n3-DS7"/>
                             <constraint firstAttribute="trailing" secondItem="66x-lM-mgk" secondAttribute="trailing" constant="20" id="qh7-Eu-q5g"/>
+                            <constraint firstAttribute="trailing" secondItem="oov-qh-geI" secondAttribute="trailing" constant="20" id="qpF-80-UBY"/>
                             <constraint firstAttribute="trailing" secondItem="BEn-eE-QUP" secondAttribute="trailing" constant="20" id="s48-Cm-5vv"/>
                             <constraint firstItem="Fau-Dh-5lF" firstAttribute="top" secondItem="66x-lM-mgk" secondAttribute="bottom" constant="30" id="vyU-4v-1V5"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="checkTicketLabel" destination="oov-qh-geI" id="z5G-iF-hmh"/>
                         <outlet property="picker" destination="96C-0z-gKe" id="hev-hx-oQO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgg-Xp-PO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XHT-BP-Ca6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1831" y="291"/>
         </scene>

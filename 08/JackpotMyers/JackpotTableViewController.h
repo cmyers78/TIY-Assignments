@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Ticket.h"
+
 
 @interface JackpotTableViewController : UITableViewController
 

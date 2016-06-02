@@ -8,6 +8,7 @@
 
 #import "JackpotTableViewController.h"
 #import "Ticket.h"
+#import "CheckTicketViewController.h"
 
 
 @interface JackpotTableViewController ()
@@ -59,7 +60,7 @@
     int number6 = arc4random_uniform(53) +1;
     
     self.winningTicket.lottoTicket = [NSString stringWithFormat:@"%i %i %i %i %i %i", number1, number2, number3, number4, number5, number6];
-    //NSLog(@"The winning ticket is: %@", self.winningTicket.lottoTicket);
+    NSLog(@"The winning ticket is: %@", self.winningTicket.lottoTicket);
 }
 
 #pragma mark - Table view data source
@@ -80,6 +81,18 @@
     return cell;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if([segue.identifier isEqualToString:@"checkTicketSegue"]) {
+        
+        CheckTicketViewController * viewController = (CheckTicketViewController *) segue.destinationViewController;
+        viewController.winningTicketJP = self.winningTicket;
+    }
+}
+
+- (IBAction)unwindSegue:(UIStoryboardSegue *) segue {
+    
+}
 - (IBAction)addTicket:(UIBarButtonItem *)sender {
     
    // NSLog(@"add ticket");
@@ -90,9 +103,9 @@
 
 - (IBAction)checkTicketPressed:(UIBarButtonItem *)sender {
    // NSLog(@"check Ticket Pressed");
+    
+    
     [self performSegueWithIdentifier:@"checkTicketSegue" sender:self];
-    
-    
 }
 
 
