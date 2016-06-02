@@ -21,6 +21,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="kWM-V3-8XO" kind="presentation" identifier="checkTicketSegue" id="vWo-4d-rHv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -43,7 +46,55 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06K-2J-JXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1213" y="291"/>
+            <point key="canvasLocation" x="1145" y="286"/>
+        </scene>
+        <!--Check Ticket View Controller-->
+        <scene sceneID="bmo-Xj-9Z2">
+            <objects>
+                <viewController id="kWM-V3-8XO" customClass="CheckTicketViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eSP-aV-um2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fau-Dh-5lF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GYf-QJ-bEY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96C-0z-gKe">
+                                <rect key="frame" x="10" y="192" width="580" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66x-lM-mgk">
+                                <rect key="frame" x="20" y="540" width="560" height="30"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEn-eE-QUP">
+                                <rect key="frame" x="20" y="50" width="560" height="30"/>
+                                <state key="normal" title="Check Ticket"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BEn-eE-QUP" firstAttribute="centerX" secondItem="GYf-QJ-bEY" secondAttribute="centerX" id="8UH-bD-4YA"/>
+                            <constraint firstItem="66x-lM-mgk" firstAttribute="leading" secondItem="GYf-QJ-bEY" secondAttribute="leading" constant="20" id="8a0-UR-jba"/>
+                            <constraint firstItem="BEn-eE-QUP" firstAttribute="top" secondItem="eSP-aV-um2" secondAttribute="bottom" constant="30" id="F7B-1q-zOA"/>
+                            <constraint firstItem="66x-lM-mgk" firstAttribute="centerX" secondItem="GYf-QJ-bEY" secondAttribute="centerX" id="Qxg-hD-C3b"/>
+                            <constraint firstItem="BEn-eE-QUP" firstAttribute="leading" secondItem="GYf-QJ-bEY" secondAttribute="leading" constant="20" id="UC1-KH-4TV"/>
+                            <constraint firstItem="96C-0z-gKe" firstAttribute="centerX" secondItem="GYf-QJ-bEY" secondAttribute="centerX" id="Yq9-bm-LcC"/>
+                            <constraint firstItem="96C-0z-gKe" firstAttribute="leading" secondItem="GYf-QJ-bEY" secondAttribute="leading" constant="10" id="cZB-5S-i7e"/>
+                            <constraint firstItem="96C-0z-gKe" firstAttribute="centerY" secondItem="GYf-QJ-bEY" secondAttribute="centerY" id="jkM-id-np4"/>
+                            <constraint firstAttribute="trailing" secondItem="96C-0z-gKe" secondAttribute="trailing" constant="10" id="nOr-n3-DS7"/>
+                            <constraint firstAttribute="trailing" secondItem="66x-lM-mgk" secondAttribute="trailing" constant="20" id="qh7-Eu-q5g"/>
+                            <constraint firstAttribute="trailing" secondItem="BEn-eE-QUP" secondAttribute="trailing" constant="20" id="s48-Cm-5vv"/>
+                            <constraint firstItem="Fau-Dh-5lF" firstAttribute="top" secondItem="66x-lM-mgk" secondAttribute="bottom" constant="30" id="vyU-4v-1V5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="picker" destination="96C-0z-gKe" id="hev-hx-oQO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgg-Xp-PO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1831" y="291"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="edX-0x-nkb">

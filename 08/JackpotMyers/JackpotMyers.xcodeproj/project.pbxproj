@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6805FCA1CFFC23C0037C98A /* CheckTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6805FC91CFFC23C0037C98A /* CheckTicketViewController.m */; };
 		C6D341E11CFF949F00E4F851 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D341E01CFF949F00E4F851 /* main.m */; };
 		C6D341E41CFF949F00E4F851 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D341E31CFF949F00E4F851 /* AppDelegate.m */; };
 		C6D341EA1CFF949F00E4F851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D341E81CFF949F00E4F851 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6805FC81CFFC23C0037C98A /* CheckTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckTicketViewController.h; sourceTree = "<group>"; };
+		C6805FC91CFFC23C0037C98A /* CheckTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckTicketViewController.m; sourceTree = "<group>"; };
 		C6D341DC1CFF949E00E4F851 /* JackpotMyers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JackpotMyers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D341E01CFF949F00E4F851 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6D341E21CFF949F00E4F851 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +45,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6805FCB1CFFC2470037C98A /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				C6D341F91CFF9B0100E4F851 /* Ticket.h */,
+				C6D341FA1CFF9B0100E4F851 /* Ticket.m */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		C6805FCC1CFFC2550037C98A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6D341F61CFF951400E4F851 /* JackpotTableViewController.h */,
+				C6D341F71CFF951400E4F851 /* JackpotTableViewController.m */,
+				C6805FC81CFFC23C0037C98A /* CheckTicketViewController.h */,
+				C6805FC91CFFC23C0037C98A /* CheckTicketViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		C6D341D31CFF949E00E4F851 = {
 			isa = PBXGroup;
 			children = (
@@ -63,10 +86,8 @@
 			children = (
 				C6D341E21CFF949F00E4F851 /* AppDelegate.h */,
 				C6D341E31CFF949F00E4F851 /* AppDelegate.m */,
-				C6D341F61CFF951400E4F851 /* JackpotTableViewController.h */,
-				C6D341F71CFF951400E4F851 /* JackpotTableViewController.m */,
-				C6D341F91CFF9B0100E4F851 /* Ticket.h */,
-				C6D341FA1CFF9B0100E4F851 /* Ticket.m */,
+				C6805FCC1CFFC2550037C98A /* Controllers */,
+				C6805FCB1CFFC2470037C98A /* Modal */,
 				C6D341E81CFF949F00E4F851 /* Main.storyboard */,
 				C6D341EB1CFF949F00E4F851 /* Assets.xcassets */,
 				C6D341ED1CFF949F00E4F851 /* LaunchScreen.storyboard */,
@@ -158,6 +179,7 @@
 				C6D341E41CFF949F00E4F851 /* AppDelegate.m in Sources */,
 				C6D341E11CFF949F00E4F851 /* main.m in Sources */,
 				C6D341FB1CFF9B0100E4F851 /* Ticket.m in Sources */,
+				C6805FCA1CFFC23C0037C98A /* CheckTicketViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +328,7 @@
 				C6D341F51CFF949F00E4F851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

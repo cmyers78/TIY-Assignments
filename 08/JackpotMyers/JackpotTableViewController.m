@@ -90,7 +90,7 @@
 
 - (IBAction)checkTicketPressed:(UIBarButtonItem *)sender {
    // NSLog(@"check Ticket Pressed");
-    
+    [self performSegueWithIdentifier:@"checkTicketSegue" sender:self];
     
     
 }
