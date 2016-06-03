@@ -12,8 +12,12 @@
 
 @interface CheckTicketViewController ()
 @property (strong, nonatomic) NSArray * pickerWheel;
-
 @property (weak, nonatomic) IBOutlet UILabel *checkTicketLabel;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+
+//@property (strong, nonatomic) Ticket * winningTicketCheck;
+
 
 @end
 
@@ -22,9 +26,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.checkedTicket = [[Ticket alloc] init];
+    
     self.pickerWheel = [[NSArray alloc] init];
     
-    self.pickerWheel = @[@" ", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"16", @"17", @"18", @"19", @"20", @"21", @"22", @"23", @"24", @"25", @"26", @"27", @"28", @"29", @"30", @"31", @"32", @"33", @"34", @"35", @"36", @"37", @"38", @"39", @"40", @"41", @"42", @"43", @"44", @"45", @"46", @"47", @"48", @"49", @"50", @"51", @"52", @"53"];
+    self.pickerWheel = @[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"16", @"17", @"18", @"19", @"20", @"21", @"22", @"23", @"24", @"25", @"26", @"27", @"28", @"29", @"30", @"31", @"32", @"33", @"34", @"35", @"36", @"37", @"38", @"39", @"40", @"41", @"42", @"43", @"44", @"45", @"46", @"47", @"48", @"49", @"50", @"51", @"52", @"53"];
 
     self.picker.dataSource = self;
     self.picker.delegate = self;
@@ -40,26 +46,25 @@
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    return self.pickerWheel[row];
+    return [self.pickerWheel objectAtIndex:row];
     
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
-    //NSLog(@"I selected: %ld in component %ld", row, component);
+    NSLog(@"I value of row %ld == %@ in component %ld", row, self.pickerWheel[row], component);
     
-    self.checkedTicket = [self.pickerWheel objectAtIndex:row];
+    self.checkedTicket.lottoTicket = [self.pickerWheel objectAtIndex:row];
     
     
 }
 
 - (IBAction)checkTicketPressed:(UIButton *)sender {
-    if (self.winningTicketJP == self.checkedTicket) {
+    if ([self.winningTicketJP.lottoTicket isEqualToString:self.checkedTicket.lottoTicket]) {
         self.checkTicketLabel.text = @"You have won!";
     } else {
         self.checkTicketLabel.text = @"You did not win";
     }
-    
 }
 
 /*

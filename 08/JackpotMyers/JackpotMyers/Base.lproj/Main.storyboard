@@ -62,6 +62,10 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96C-0z-gKe">
                                 <rect key="frame" x="10" y="192" width="580" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kWM-V3-8XO" id="ULL-p9-OjC"/>
+                                    <outlet property="delegate" destination="kWM-V3-8XO" id="0co-br-J1m"/>
+                                </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66x-lM-mgk">
                                 <rect key="frame" x="20" y="540" width="560" height="30"/>
@@ -107,6 +111,7 @@
                     <connections>
                         <outlet property="checkTicketLabel" destination="oov-qh-geI" id="z5G-iF-hmh"/>
                         <outlet property="picker" destination="96C-0z-gKe" id="hev-hx-oQO"/>
+                        <outlet property="pickerView" destination="96C-0z-gKe" id="CCH-DG-hDb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgg-Xp-PO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
