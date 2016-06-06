@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  PopularMoviesAppMyers
+//  Top Movies Myers
 //
-//  Created by Christopher Myers on 6/3/16.
+//  Created by Christopher Myers on 6/4/16.
 //  Copyright © 2016 Dragoman Developers, LLC. All rights reserved.
 //
 

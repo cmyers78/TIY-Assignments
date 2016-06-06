@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>PopularMoviesAppMyers.xcscheme</key>
+		<key>Top Movies Myers.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>C6DA0AF91D02124400577A3E</key>
+		<key>C6D85ADF1D03C9A200CF1677</key>
 		<dict>
 			<key>primary</key>
 			<true/>

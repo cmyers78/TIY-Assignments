@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C6DA0AF91D02124400577A3E"
-               BuildableName = "PopularMoviesAppMyers.app"
-               BlueprintName = "PopularMoviesAppMyers"
-               ReferencedContainer = "container:PopularMoviesAppMyers.xcodeproj">
+               BlueprintIdentifier = "C6D85ADF1D03C9A200CF1677"
+               BuildableName = "Top Movies Myers.app"
+               BlueprintName = "Top Movies Myers"
+               ReferencedContainer = "container:Top Movies Myers.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6DA0AF91D02124400577A3E"
-            BuildableName = "PopularMoviesAppMyers.app"
-            BlueprintName = "PopularMoviesAppMyers"
-            ReferencedContainer = "container:PopularMoviesAppMyers.xcodeproj">
+            BlueprintIdentifier = "C6D85ADF1D03C9A200CF1677"
+            BuildableName = "Top Movies Myers.app"
+            BlueprintName = "Top Movies Myers"
+            ReferencedContainer = "container:Top Movies Myers.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6DA0AF91D02124400577A3E"
-            BuildableName = "PopularMoviesAppMyers.app"
-            BlueprintName = "PopularMoviesAppMyers"
-            ReferencedContainer = "container:PopularMoviesAppMyers.xcodeproj">
+            BlueprintIdentifier = "C6D85ADF1D03C9A200CF1677"
+            BuildableName = "Top Movies Myers.app"
+            BlueprintName = "Top Movies Myers"
+            ReferencedContainer = "container:Top Movies Myers.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6DA0AF91D02124400577A3E"
-            BuildableName = "PopularMoviesAppMyers.app"
-            BlueprintName = "PopularMoviesAppMyers"
-            ReferencedContainer = "container:PopularMoviesAppMyers.xcodeproj">
+            BlueprintIdentifier = "C6D85ADF1D03C9A200CF1677"
+            BuildableName = "Top Movies Myers.app"
+            BlueprintName = "Top Movies Myers"
+            ReferencedContainer = "container:Top Movies Myers.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
