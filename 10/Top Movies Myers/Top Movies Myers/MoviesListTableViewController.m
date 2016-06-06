@@ -8,12 +8,14 @@
 
 #import "MoviesListTableViewController.h"
 #import "Movie.h"
+#import "MoviesDetailViewController.h"
 
 @interface MoviesListTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
 
 @property (strong, nonatomic) NSMutableArray * moviesArray;
 @property (strong, nonatomic) Movie * currentMovie;
+@property (strong, nonatomic) UIImage * thePoster;
 
 
 @end
@@ -26,11 +28,7 @@
     self.moviesArray = [[NSMutableArray alloc] init];
     [self loadJSONFile];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
 }
 
 
@@ -123,15 +121,41 @@
     
     self.currentMovie = [self.moviesArray objectAtIndex:indexPath.row];
     
-    UIImage * theImage = [self imageFromURLString:self.currentMovie.posterPath];
+    self.thePoster = [self imageFromURLString:self.currentMovie.posterPath];
+    
     
     cell.textLabel.text = self.currentMovie.originalTitle;
-    cell.imageView.image = theImage;
+    cell.imageView.image = self.thePoster;
     
                             
     return cell;
 }
 
+// this method will allow the user to select a cell and access the data inside the cell.
+// however, you must call the self.currentMovie AND self.Poster methods again for the correct datat to be loaded.
+// I only called the first one, and the originial title would load fine, but the poster would not....until I called the second method again
+// both of these methods were called above in the cellForRowAtIndexPath method
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    self.currentMovie = [self.moviesArray objectAtIndex:indexPath.row];
+    self.thePoster = [self imageFromURLString:self.currentMovie.posterPath];
+    
+    [self performSegueWithIdentifier:@"detailSegue" sender:nil];
+    
+}
 
+// this sends the data to the next view controller
+// a pointer must be created to send the data--I called mine viewController
+// detailPoster is the variable name for the UIImage on the next screen
+// It is set equal to the Poster Image on the first screen
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    MoviesDetailViewController *viewController = (MoviesDetailViewController *) segue.destinationViewController;
+    
+    viewController.theMovie = self.currentMovie;
+    viewController.detailPoster = self.thePoster;
+    
+}
 @end
