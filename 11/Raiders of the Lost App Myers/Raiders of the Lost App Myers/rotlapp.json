@@ -1,0 +1,54 @@
+{
+  "characters": [
+    {
+      "name": "Dr. Henry Indiana Jones",
+      "status": "Alive",
+      "movieAppeared": "Raiders of the Lost Ark"
+    },
+    {
+      "name": "Dr. Rene Belloq",
+      "status": "Deceased",
+      "movieAppeared": "Raiders of the Lost Ark"
+    },
+    {
+      "name": "Dr. Marcus Brody",
+      "status": "Deceased",
+      "movieAppeared": "Raiders of the Lost Ark"
+    },
+    {
+      "name": "Willie Scott",
+      "status": "Alive",
+      "movieAppeared": "Temple of Doom"
+    },
+    {
+      "name": "Short Round",
+      "status": "Alive",
+      "movieAppeared": "Temple of Doom"
+    },
+    {
+      "name": "Walter Donovan",
+      "status": "Deceased",
+      "movieAppeared": "The Last Crusade"
+    },
+    {
+      "name": "Dr. Henry Walton Jones, Sr.",
+      "status": "Deceased",
+      "movieAppeared": "The Last Crusade"
+    },
+    {
+      "name": "Dr. Elsa Schneider",
+      "status": "Deceased",
+      "movieAppeared": "The Last Crusade"
+    },
+    {
+      "name": "George \"Mac\" McHale",
+      "status": "Alive? Deceased?",
+      "movieAppeared": "Kingdom of the Crystal Skull"
+    },
+    {
+      "name": "Mutt Williams",
+      "status": "Alive",
+      "movieAppeared": "Kingdom of the Crystal Skull"
+    }
+  ]
+}

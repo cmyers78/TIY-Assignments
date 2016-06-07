@@ -31,6 +31,7 @@
 
 }
 
+#pragma mark - Parsing and Loading Data Methods
 
 -(void)loadJSONFile {
     
@@ -84,6 +85,8 @@
     }
 }
 
+#pragma mark - creating images from string
+
 -(UIImage *)imageFromURLString:(NSString *)urlString {
     
     UIImage *theImage = nil;
@@ -103,7 +106,7 @@
 }
 
 
-#pragma mark - Table view data source
+#pragma mark - Table view data destination
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
