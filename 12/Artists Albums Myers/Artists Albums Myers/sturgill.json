@@ -1,0 +1,393 @@
+{
+  "href" : "https://api.spotify.com/v1/artists/3vDpQbGnzRbRVirXlfQagB/albums?offset=0&limit=20&album_type=single,album,compilation,appears_on,ep",
+  "items" : [ {
+    "album_type" : "album",
+    "available_markets" : [ "AR", "AU", "AT", "BE", "BO", "BR", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "FR", "GR", "GT", "HN", "HK", "HU", "IS", "IE", "IT", "LV", "LT", "LU", "MY", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PH", "PL", "PT", "SG", "SK", "ES", "SE", "CH", "TW", "TR", "UY", "US", "GB", "AD", "LI", "MC", "ID" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/5I3UdCxtIh6hkQ7rMPUvA4"
+    },
+    "href" : "https://api.spotify.com/v1/albums/5I3UdCxtIh6hkQ7rMPUvA4",
+    "id" : "5I3UdCxtIh6hkQ7rMPUvA4",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/f90a0b30265942fcc5096eee7f07a95604394d47",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/837b9422051f6cc6d30a129dc702d6f7e6eaadaf",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/0f27b46eea5c2514b3ee659a962357d478f3a81f",
+      "width" : 64
+    } ],
+    "name" : "A Sailor's Guide to Earth",
+    "type" : "album",
+    "uri" : "spotify:album:5I3UdCxtIh6hkQ7rMPUvA4"
+  }, {
+    "album_type" : "album",
+    "available_markets" : [ "AU", "NZ" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/2xhxNdW3ymS93u8eA835lj"
+    },
+    "href" : "https://api.spotify.com/v1/albums/2xhxNdW3ymS93u8eA835lj",
+    "id" : "2xhxNdW3ymS93u8eA835lj",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/8e4ad7380e7335c91c8b1eb311fcb2ea2b18e6e1",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/74165216d17d30bdb5b193b33fa3411bd7ecb047",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ae93c3c80b91045a8d09a140379616dd1f309378",
+      "width" : 64
+    } ],
+    "name" : "High Top Mountain",
+    "type" : "album",
+    "uri" : "spotify:album:2xhxNdW3ymS93u8eA835lj"
+  }, {
+    "album_type" : "album",
+    "available_markets" : [ "CA", "US" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/59ElPFKCqmH5nLRdWjyopf"
+    },
+    "href" : "https://api.spotify.com/v1/albums/59ElPFKCqmH5nLRdWjyopf",
+    "id" : "59ElPFKCqmH5nLRdWjyopf",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/f2f79ff3123739c2aad2d99adf699a3f0108d362",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/55f8b57cc49816f54bf8f57352d897cf0ec8f31b",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/c9231fcf258a1a3ec423269c17600e6b0de76ee4",
+      "width" : 64
+    } ],
+    "name" : "High Top Mountain",
+    "type" : "album",
+    "uri" : "spotify:album:59ElPFKCqmH5nLRdWjyopf"
+  }, {
+    "album_type" : "album",
+    "available_markets" : [ "AT", "CH", "DE" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/4nkwHl6kkIKqDqCPtGUA0J"
+    },
+    "href" : "https://api.spotify.com/v1/albums/4nkwHl6kkIKqDqCPtGUA0J",
+    "id" : "4nkwHl6kkIKqDqCPtGUA0J",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/5b4518f654aced6fb100d41d0eb71a26a1ed6487",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/368973e7116f4bdca82076900c2ff1df714d12d6",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/002af79fd63485370a99012efc172d52c811fb94",
+      "width" : 64
+    } ],
+    "name" : "High Top Mountain",
+    "type" : "album",
+    "uri" : "spotify:album:4nkwHl6kkIKqDqCPtGUA0J"
+  }, {
+    "album_type" : "album",
+    "available_markets" : [ "AD", "BE", "BG", "CY", "CZ", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "NL", "NO", "PL", "PT", "SE", "SK" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/2B9Gx5ql7NaoYcP6ydtzwr"
+    },
+    "href" : "https://api.spotify.com/v1/albums/2B9Gx5ql7NaoYcP6ydtzwr",
+    "id" : "2B9Gx5ql7NaoYcP6ydtzwr",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/8511ca1520cddd1248181dace9bae154c7b1b191",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/3f74d8ac255ad9ce0cb649fc629121f1e79323e9",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/71a80c465cdf610b332f92ff5103268f890a1211",
+      "width" : 64
+    } ],
+    "name" : "High Top Mountain",
+    "type" : "album",
+    "uri" : "spotify:album:2B9Gx5ql7NaoYcP6ydtzwr"
+  }, {
+    "album_type" : "album",
+    "available_markets" : [ "AU", "NZ" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/2vktd9Zxj84KOQNvUGw0ll"
+    },
+    "href" : "https://api.spotify.com/v1/albums/2vktd9Zxj84KOQNvUGw0ll",
+    "id" : "2vktd9Zxj84KOQNvUGw0ll",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/a72c91a4b117795cd6df2b0a0fc3781095baf70b",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/4c716432ce1fb1960021c172f34997184a19eb5d",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/b9e37c4a94b8b04fcd66c10d4c442a6ed35209df",
+      "width" : 64
+    } ],
+    "name" : "Metamodern Sounds In Country Music (Bonus Track Version)",
+    "type" : "album",
+    "uri" : "spotify:album:2vktd9Zxj84KOQNvUGw0ll"
+  }, {
+    "album_type" : "album",
+    "available_markets" : [ "AT", "CH", "DE" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/2qVTrdOiNHKhSJ7yecGUYh"
+    },
+    "href" : "https://api.spotify.com/v1/albums/2qVTrdOiNHKhSJ7yecGUYh",
+    "id" : "2qVTrdOiNHKhSJ7yecGUYh",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/6b6eddb49184b41dc5b227f66ede972fafa7e58c",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/4f79c1708cde4aaed92506acd299ebf17f6cc377",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/a3f40c430e13eeccae66fc781be3bd55e178806d",
+      "width" : 64
+    } ],
+    "name" : "Metamodern Sounds in Country Music",
+    "type" : "album",
+    "uri" : "spotify:album:2qVTrdOiNHKhSJ7yecGUYh"
+  }, {
+    "album_type" : "album",
+    "available_markets" : [ "AD", "BE", "BG", "CY", "CZ", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "NL", "NO", "PL", "PT", "SE", "SK" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/19lODR6Yv1mfvvcTkrFAn2"
+    },
+    "href" : "https://api.spotify.com/v1/albums/19lODR6Yv1mfvvcTkrFAn2",
+    "id" : "19lODR6Yv1mfvvcTkrFAn2",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/f920ef82bc7cb4c1fca1d90ca2fe5527b479d66c",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/51a048b4b674c5417a7650ba0e6c1e970d4c31b8",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/744b431a3ebd28f73e71004501e29a33559b2642",
+      "width" : 64
+    } ],
+    "name" : "Metamodern Sounds In Country Music",
+    "type" : "album",
+    "uri" : "spotify:album:19lODR6Yv1mfvvcTkrFAn2"
+  }, {
+    "album_type" : "album",
+    "available_markets" : [ "CA", "US" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/4makbOuLd5SUdyHMaNM1Ag"
+    },
+    "href" : "https://api.spotify.com/v1/albums/4makbOuLd5SUdyHMaNM1Ag",
+    "id" : "4makbOuLd5SUdyHMaNM1Ag",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/c421365cb117f65a42c18e3971817523450a26a2",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/3d6867bf61b0e4630c7bb5fccc7bc4dc417cfd4f",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/156fded7697196397723647bcfb0631a0277c15b",
+      "width" : 64
+    } ],
+    "name" : "Metamodern Sounds in Country Music",
+    "type" : "album",
+    "uri" : "spotify:album:4makbOuLd5SUdyHMaNM1Ag"
+  }, {
+    "album_type" : "single",
+    "available_markets" : [ "AR", "AU", "AT", "BE", "BO", "BR", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "FR", "GR", "GT", "HN", "HK", "HU", "IS", "IE", "IT", "LV", "LT", "LU", "MY", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PH", "PL", "PT", "SG", "SK", "ES", "SE", "CH", "TW", "TR", "UY", "GB", "AD", "LI", "MC", "ID" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/0CR2NDGjmAkosGVorhJKrQ"
+    },
+    "href" : "https://api.spotify.com/v1/albums/0CR2NDGjmAkosGVorhJKrQ",
+    "id" : "0CR2NDGjmAkosGVorhJKrQ",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/f90a0b30265942fcc5096eee7f07a95604394d47",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/837b9422051f6cc6d30a129dc702d6f7e6eaadaf",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/0f27b46eea5c2514b3ee659a962357d478f3a81f",
+      "width" : 64
+    } ],
+    "name" : "In Bloom",
+    "type" : "album",
+    "uri" : "spotify:album:0CR2NDGjmAkosGVorhJKrQ"
+  }, {
+    "album_type" : "single",
+    "available_markets" : [ "AR", "AU", "AT", "BE", "BO", "BR", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "FR", "GR", "GT", "HN", "HK", "HU", "IS", "IE", "IT", "LV", "LT", "LU", "MY", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PH", "PL", "PT", "SG", "SK", "ES", "SE", "CH", "TW", "TR", "UY", "GB", "AD", "LI", "MC", "ID" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/2BtUK45fOwHJEZsXhm5N30"
+    },
+    "href" : "https://api.spotify.com/v1/albums/2BtUK45fOwHJEZsXhm5N30",
+    "id" : "2BtUK45fOwHJEZsXhm5N30",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/f90a0b30265942fcc5096eee7f07a95604394d47",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/837b9422051f6cc6d30a129dc702d6f7e6eaadaf",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/0f27b46eea5c2514b3ee659a962357d478f3a81f",
+      "width" : 64
+    } ],
+    "name" : "Brace For Impact (Live A Little)",
+    "type" : "album",
+    "uri" : "spotify:album:2BtUK45fOwHJEZsXhm5N30"
+  }, {
+    "album_type" : "single",
+    "available_markets" : [ "AD", "BE", "BG", "CY", "CZ", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "NL", "NO", "PL", "PT", "SE", "SK" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/5eKRP8t2sqMppj5r7mEgbb"
+    },
+    "href" : "https://api.spotify.com/v1/albums/5eKRP8t2sqMppj5r7mEgbb",
+    "id" : "5eKRP8t2sqMppj5r7mEgbb",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/daf2fce4957e1c174b32887b1c18091719a1d7e4",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/22dc7b9d886b524f441fbe3eb8902c5bc12a78d8",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/3be31d2241c01bb96baacaeb52594c508486ac14",
+      "width" : 64
+    } ],
+    "name" : "Turtles All The Way Down",
+    "type" : "album",
+    "uri" : "spotify:album:5eKRP8t2sqMppj5r7mEgbb"
+  }, {
+    "album_type" : "single",
+    "available_markets" : [ "CA", "US" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/4UlCvp18ddl1aTxKOGVyWY"
+    },
+    "href" : "https://api.spotify.com/v1/albums/4UlCvp18ddl1aTxKOGVyWY",
+    "id" : "4UlCvp18ddl1aTxKOGVyWY",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/a3b475cb9c57a62e23e8d569534755c537265827",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/164ddc3e331c5a74f23f97d2d2b7b3dcbf65ef0a",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ff0d4d921a6cb1f6f5f4fca4ae2c6a22dfec7320",
+      "width" : 64
+    } ],
+    "name" : "Turtles All the Way Down",
+    "type" : "album",
+    "uri" : "spotify:album:4UlCvp18ddl1aTxKOGVyWY"
+  }, {
+    "album_type" : "single",
+    "available_markets" : [ "AT", "CH", "DE" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/70OCJyRYDUDUMt20XJHDX2"
+    },
+    "href" : "https://api.spotify.com/v1/albums/70OCJyRYDUDUMt20XJHDX2",
+    "id" : "70OCJyRYDUDUMt20XJHDX2",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/034732128949a75a7502ed348a9dbc6929ed3d5a",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/3879a515935063afcbb114b33b63c3231896c8d1",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/a0208ccfaec870a883029dc0980c96c866c46238",
+      "width" : 64
+    } ],
+    "name" : "Turtles All the Way Down",
+    "type" : "album",
+    "uri" : "spotify:album:70OCJyRYDUDUMt20XJHDX2"
+  }, {
+    "album_type" : "album",
+    "available_markets" : [ "AR", "AU", "AT", "BE", "BO", "BR", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "FR", "GR", "GT", "HN", "HK", "HU", "IS", "IE", "IT", "LV", "LT", "LU", "MY", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PH", "PL", "PT", "SG", "SK", "ES", "SE", "CH", "TW", "TR", "UY", "US", "GB", "AD", "LI", "MC", "ID" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/77era7gZSj4bR9olUpIcJu"
+    },
+    "href" : "https://api.spotify.com/v1/albums/77era7gZSj4bR9olUpIcJu",
+    "id" : "77era7gZSj4bR9olUpIcJu",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/95399c68621905d26b11737801777b35b467c7c8",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/fccdfc875899d813aec43b4580333f2913e62f97",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/328de18763631fe10b1b7623ad3c6daf64c4dd56",
+      "width" : 64
+    } ],
+    "name" : "VINYL: THE ESSENTIALS: BEST OF SEASON 1",
+    "type" : "album",
+    "uri" : "spotify:album:77era7gZSj4bR9olUpIcJu"
+  }, {
+    "album_type" : "album",
+    "available_markets" : [ "AR", "AU", "AT", "BE", "BO", "BR", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "FR", "GR", "GT", "HN", "HK", "HU", "IS", "IE", "IT", "LV", "LT", "LU", "MY", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PH", "PL", "PT", "SG", "SK", "ES", "SE", "CH", "TW", "TR", "UY", "US", "GB", "AD", "LI", "MC", "ID" ],
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/album/3K6FbYh9Hlet8XXryMuqPc"
+    },
+    "href" : "https://api.spotify.com/v1/albums/3K6FbYh9Hlet8XXryMuqPc",
+    "id" : "3K6FbYh9Hlet8XXryMuqPc",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/a3b4b2152fce4d104b22cb12692c17d060fc7cc8",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/170dc8d6e8825008d309df8ffe5b708b11a02cf3",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/473c36e9b38a24a71eca5a9a25e27e7e033bbd2b",
+      "width" : 64
+    } ],
+    "name" : "VINYL: Music From The HBO® Original Series - Vol. 1",
+    "type" : "album",
+    "uri" : "spotify:album:3K6FbYh9Hlet8XXryMuqPc"
+  } ],
+  "limit" : 20,
+  "next" : null,
+  "offset" : 0,
+  "previous" : null,
+  "total" : 16
+}
