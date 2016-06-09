@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6D0F2291D0A069E004734E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F2281D0A069E004734E6 /* main.m */; };
+		C6D0F22C1D0A069E004734E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F22B1D0A069E004734E6 /* AppDelegate.m */; };
+		C6D0F2321D0A069E004734E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D0F2301D0A069E004734E6 /* Main.storyboard */; };
+		C6D0F2341D0A069E004734E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D0F2331D0A069E004734E6 /* Assets.xcassets */; };
+		C6D0F2371D0A069E004734E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D0F2351D0A069E004734E6 /* LaunchScreen.storyboard */; };
+		C6D0F2401D0A084F004734E6 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F23F1D0A084F004734E6 /* LogInViewController.m */; };
+		C6D0F2441D0A08AE004734E6 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F2431D0A08AE004734E6 /* HomeScreenViewController.m */; };
+		C6D0F2471D0A092A004734E6 /* RestaurantListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F2461D0A092A004734E6 /* RestaurantListViewController.m */; };
+		C6D0F24A1D0A09A5004734E6 /* MenuListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F2491D0A09A5004734E6 /* MenuListViewController.m */; };
+		C6D0F24D1D0A0A27004734E6 /* RateDishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F24C1D0A0A27004734E6 /* RateDishViewController.m */; };
+		C6D0F2501D0A0B01004734E6 /* AboutRestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F24F1D0A0B01004734E6 /* AboutRestaurantViewController.m */; };
+		C6D0F2531D0A22C1004734E6 /* RestaurantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F2521D0A22C1004734E6 /* RestaurantTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C6D0F2241D0A069E004734E6 /* Gastronomy Myers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gastronomy Myers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D0F2281D0A069E004734E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C6D0F22A1D0A069E004734E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C6D0F22B1D0A069E004734E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C6D0F2311D0A069E004734E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6D0F2331D0A069E004734E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6D0F2361D0A069E004734E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6D0F2381D0A069E004734E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6D0F23E1D0A084F004734E6 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		C6D0F23F1D0A084F004734E6 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		C6D0F2421D0A08AE004734E6 /* HomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenViewController.h; sourceTree = "<group>"; };
+		C6D0F2431D0A08AE004734E6 /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenViewController.m; sourceTree = "<group>"; };
+		C6D0F2451D0A092A004734E6 /* RestaurantListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantListViewController.h; sourceTree = "<group>"; };
+		C6D0F2461D0A092A004734E6 /* RestaurantListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantListViewController.m; sourceTree = "<group>"; };
+		C6D0F2481D0A09A5004734E6 /* MenuListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuListViewController.h; sourceTree = "<group>"; };
+		C6D0F2491D0A09A5004734E6 /* MenuListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuListViewController.m; sourceTree = "<group>"; };
+		C6D0F24B1D0A0A27004734E6 /* RateDishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateDishViewController.h; sourceTree = "<group>"; };
+		C6D0F24C1D0A0A27004734E6 /* RateDishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateDishViewController.m; sourceTree = "<group>"; };
+		C6D0F24E1D0A0B01004734E6 /* AboutRestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutRestaurantViewController.h; sourceTree = "<group>"; };
+		C6D0F24F1D0A0B01004734E6 /* AboutRestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutRestaurantViewController.m; sourceTree = "<group>"; };
+		C6D0F2511D0A22C1004734E6 /* RestaurantTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantTableViewCell.h; sourceTree = "<group>"; };
+		C6D0F2521D0A22C1004734E6 /* RestaurantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6D0F2211D0A069E004734E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6D0F21B1D0A069D004734E6 = {
+			isa = PBXGroup;
+			children = (
+				C6D0F2261D0A069E004734E6 /* Gastronomy Myers */,
+				C6D0F2251D0A069E004734E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6D0F2251D0A069E004734E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6D0F2241D0A069E004734E6 /* Gastronomy Myers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6D0F2261D0A069E004734E6 /* Gastronomy Myers */ = {
+			isa = PBXGroup;
+			children = (
+				C6D0F22A1D0A069E004734E6 /* AppDelegate.h */,
+				C6D0F22B1D0A069E004734E6 /* AppDelegate.m */,
+				C6D0F2541D0A22C6004734E6 /* View */,
+				C6D0F2411D0A088F004734E6 /* Controller */,
+				C6D0F2301D0A069E004734E6 /* Main.storyboard */,
+				C6D0F2331D0A069E004734E6 /* Assets.xcassets */,
+				C6D0F2351D0A069E004734E6 /* LaunchScreen.storyboard */,
+				C6D0F2381D0A069E004734E6 /* Info.plist */,
+				C6D0F2271D0A069E004734E6 /* Supporting Files */,
+			);
+			path = "Gastronomy Myers";
+			sourceTree = "<group>";
+		};
+		C6D0F2271D0A069E004734E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6D0F2281D0A069E004734E6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6D0F2411D0A088F004734E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6D0F23E1D0A084F004734E6 /* LogInViewController.h */,
+				C6D0F23F1D0A084F004734E6 /* LogInViewController.m */,
+				C6D0F2421D0A08AE004734E6 /* HomeScreenViewController.h */,
+				C6D0F2431D0A08AE004734E6 /* HomeScreenViewController.m */,
+				C6D0F2451D0A092A004734E6 /* RestaurantListViewController.h */,
+				C6D0F2461D0A092A004734E6 /* RestaurantListViewController.m */,
+				C6D0F2481D0A09A5004734E6 /* MenuListViewController.h */,
+				C6D0F2491D0A09A5004734E6 /* MenuListViewController.m */,
+				C6D0F24B1D0A0A27004734E6 /* RateDishViewController.h */,
+				C6D0F24C1D0A0A27004734E6 /* RateDishViewController.m */,
+				C6D0F24E1D0A0B01004734E6 /* AboutRestaurantViewController.h */,
+				C6D0F24F1D0A0B01004734E6 /* AboutRestaurantViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C6D0F2541D0A22C6004734E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6D0F2511D0A22C1004734E6 /* RestaurantTableViewCell.h */,
+				C6D0F2521D0A22C1004734E6 /* RestaurantTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6D0F2231D0A069E004734E6 /* Gastronomy Myers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6D0F23B1D0A069E004734E6 /* Build configuration list for PBXNativeTarget "Gastronomy Myers" */;
+			buildPhases = (
+				C6D0F2201D0A069E004734E6 /* Sources */,
+				C6D0F2211D0A069E004734E6 /* Frameworks */,
+				C6D0F2221D0A069E004734E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gastronomy Myers";
+			productName = "Gastronomy Myers";
+			productReference = C6D0F2241D0A069E004734E6 /* Gastronomy Myers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6D0F21C1D0A069D004734E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Dragoman Developers, LLC";
+				TargetAttributes = {
+					C6D0F2231D0A069E004734E6 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C6D0F21F1D0A069D004734E6 /* Build configuration list for PBXProject "Gastronomy Myers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6D0F21B1D0A069D004734E6;
+			productRefGroup = C6D0F2251D0A069E004734E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6D0F2231D0A069E004734E6 /* Gastronomy Myers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6D0F2221D0A069E004734E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D0F2371D0A069E004734E6 /* LaunchScreen.storyboard in Resources */,
+				C6D0F2341D0A069E004734E6 /* Assets.xcassets in Resources */,
+				C6D0F2321D0A069E004734E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6D0F2201D0A069E004734E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D0F22C1D0A069E004734E6 /* AppDelegate.m in Sources */,
+				C6D0F2471D0A092A004734E6 /* RestaurantListViewController.m in Sources */,
+				C6D0F24D1D0A0A27004734E6 /* RateDishViewController.m in Sources */,
+				C6D0F2441D0A08AE004734E6 /* HomeScreenViewController.m in Sources */,
+				C6D0F24A1D0A09A5004734E6 /* MenuListViewController.m in Sources */,
+				C6D0F2501D0A0B01004734E6 /* AboutRestaurantViewController.m in Sources */,
+				C6D0F2291D0A069E004734E6 /* main.m in Sources */,
+				C6D0F2401D0A084F004734E6 /* LogInViewController.m in Sources */,
+				C6D0F2531D0A22C1004734E6 /* RestaurantTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6D0F2301D0A069E004734E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6D0F2311D0A069E004734E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6D0F2351D0A069E004734E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6D0F2361D0A069E004734E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6D0F2391D0A069E004734E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C6D0F23A1D0A069E004734E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6D0F23C1D0A069E004734E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Gastronomy Myers/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dragomandevelopers.Gastronomy-Myers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C6D0F23D1D0A069E004734E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Gastronomy Myers/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dragomandevelopers.Gastronomy-Myers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6D0F21F1D0A069D004734E6 /* Build configuration list for PBXProject "Gastronomy Myers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6D0F2391D0A069E004734E6 /* Debug */,
+				C6D0F23A1D0A069E004734E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6D0F23B1D0A069E004734E6 /* Build configuration list for PBXNativeTarget "Gastronomy Myers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6D0F23C1D0A069E004734E6 /* Debug */,
+				C6D0F23D1D0A069E004734E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6D0F21C1D0A069D004734E6 /* Project object */;
+}
