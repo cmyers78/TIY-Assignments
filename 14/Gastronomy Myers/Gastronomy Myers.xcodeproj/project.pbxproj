@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C63DFF1F1D0C937A00BBF3DC /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = C63DFF1E1D0C937A00BBF3DC /* Agent.m */; };
+		C63DFF231D0CA38500BBF3DC /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = C63DFF221D0CA38500BBF3DC /* Restaurant.m */; };
+		C63DFF261D0CA39900BBF3DC /* Dishes.m in Sources */ = {isa = PBXBuildFile; fileRef = C63DFF251D0CA39900BBF3DC /* Dishes.m */; };
 		C6D0F2291D0A069E004734E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F2281D0A069E004734E6 /* main.m */; };
 		C6D0F22C1D0A069E004734E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F22B1D0A069E004734E6 /* AppDelegate.m */; };
 		C6D0F2321D0A069E004734E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D0F2301D0A069E004734E6 /* Main.storyboard */; };
@@ -22,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C63DFF1D1D0C937A00BBF3DC /* Agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Agent.h; path = ../Agent.h; sourceTree = "<group>"; };
+		C63DFF1E1D0C937A00BBF3DC /* Agent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Agent.m; path = ../Agent.m; sourceTree = "<group>"; };
+		C63DFF211D0CA38500BBF3DC /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		C63DFF221D0CA38500BBF3DC /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+		C63DFF241D0CA39900BBF3DC /* Dishes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dishes.h; path = ../Dishes.h; sourceTree = "<group>"; };
+		C63DFF251D0CA39900BBF3DC /* Dishes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dishes.m; path = ../Dishes.m; sourceTree = "<group>"; };
 		C6D0F2241D0A069E004734E6 /* Gastronomy Myers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gastronomy Myers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D0F2281D0A069E004734E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6D0F22A1D0A069E004734E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,6 +66,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C63DFF201D0C939800BBF3DC /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				C63DFF1D1D0C937A00BBF3DC /* Agent.h */,
+				C63DFF1E1D0C937A00BBF3DC /* Agent.m */,
+				C63DFF211D0CA38500BBF3DC /* Restaurant.h */,
+				C63DFF221D0CA38500BBF3DC /* Restaurant.m */,
+				C63DFF241D0CA39900BBF3DC /* Dishes.h */,
+				C63DFF251D0CA39900BBF3DC /* Dishes.m */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
 		C6D0F21B1D0A069D004734E6 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +100,7 @@
 			children = (
 				C6D0F22A1D0A069E004734E6 /* AppDelegate.h */,
 				C6D0F22B1D0A069E004734E6 /* AppDelegate.m */,
+				C63DFF201D0C939800BBF3DC /* Modal */,
 				C6D0F2541D0A22C6004734E6 /* View */,
 				C6D0F2411D0A088F004734E6 /* Controller */,
 				C6D0F2301D0A069E004734E6 /* Main.storyboard */,
@@ -198,10 +221,13 @@
 				C6D0F22C1D0A069E004734E6 /* AppDelegate.m in Sources */,
 				C6D0F2471D0A092A004734E6 /* RestaurantListViewController.m in Sources */,
 				C6D0F24D1D0A0A27004734E6 /* RateDishViewController.m in Sources */,
+				C63DFF261D0CA39900BBF3DC /* Dishes.m in Sources */,
+				C63DFF1F1D0C937A00BBF3DC /* Agent.m in Sources */,
 				C6D0F2441D0A08AE004734E6 /* HomeScreenViewController.m in Sources */,
 				C6D0F24A1D0A09A5004734E6 /* MenuListViewController.m in Sources */,
 				C6D0F2501D0A0B01004734E6 /* AboutRestaurantViewController.m in Sources */,
 				C6D0F2291D0A069E004734E6 /* main.m in Sources */,
+				C63DFF231D0CA38500BBF3DC /* Restaurant.m in Sources */,
 				C6D0F2401D0A084F004734E6 /* LogInViewController.m in Sources */,
 				C6D0F2531D0A22C1004734E6 /* RestaurantTableViewCell.m in Sources */,
 			);
@@ -352,6 +378,7 @@
 				C6D0F23D1D0A069E004734E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

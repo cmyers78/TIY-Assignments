@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Restaurant.h"
+#import "Dishes.h"
+
 
 @interface RestaurantListViewController : UIViewController
+
+
 
 @end
