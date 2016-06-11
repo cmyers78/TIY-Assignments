@@ -1,0 +1,417 @@
+{
+  "restaurants": [
+    {
+      "name": "Trappeze Pub",
+      "description": "A vibrant warm interior with intimate booths, plenty of bar and outdoor seating, and larger tables to accommodate groups, have helped us develop and maintain a built-in crowd of devoted regulars and a regional reputation for offering the highest quality products, providing the finest customer service and a commitment to delivering the most unique products available anywhere.",
+      "imageNameString": "trappezePub",
+      "address": "269 N. Hull Street",
+      "city" : "Athens",
+      "state": "GA",
+      "zip": "30601",
+      "latitude": 33.958213,
+      "longitude": -83.378897,
+      "menuName": "Menu Name",
+      "dishes": [
+            {
+              "name": "Steak Frites",
+              "description": "8 oz Buckhead Beef hanger // Belgian fries // béarnaise compound butter",
+              "rating": 0,
+              "imageNameString": "steakFrites",
+              "price": 18.00
+            },
+            {
+              "name": "Jack’s Cider Slow Roasted Pork Ribs",
+              "description": "half-rack of 1855 all natural pork back ribs // sweet and tangy BBQ sauce // Belgian fries (available at 5pm daily)",
+              "rating": 0,
+              "imageNameString": "porkRibs",
+              "price": 18.00
+            },
+            {
+              "name": "Pecan Crusted North Carolina Trout",
+              "description": "smoked gouda grits // tabasco honey butter // garlic crimini mushrooms (available at 5pm daily)",
+              "rating": 0,
+              "imageNameString": "pecanTrout",
+              "price": 13.00
+            },
+            {
+              "name": "The Vegan Guy",
+              "description": "Red potatoes // cherry tomatoes // onions // braised collards black-eyed peas // red pepper balsamic sauce (available at 5pm daily)",
+              "rating": 0,
+              "imageNameString": "veganGuy",
+              "price": 11.00
+            },
+            {
+              "name": "Southern Fish & Chips",
+              "description": "buttermilk dredged North Atlantic cod // malt vinegar tartar sauce // arugula // Belgian fries",
+              "rating": 0,
+              "imageNameString": "fishNChips",
+              "price": 12.00
+            }
+          ]
+    },{
+      "name": "The Branded Butcher",
+      "description": "Local farms and producers",
+      "imageNameString": "brandedButcher",
+      "address": "225 North Lumpkin Street",
+      "city" : "Athens",
+      "state": "GA",
+      "zip": "30601",
+      "latitude": 33.958453,
+      "longitude": -83.377386,
+      "menuName": "Menu Name",
+      "dishes": [
+            {
+              "name": "Veggie Omelette",
+              "description": "asparagus, ramps, romesco, fontina, small salad, toast",
+              "rating": 0,
+              "imageNameString": "veggieOmelette",
+              "price": 11.00
+            },
+            {
+              "name": "North Carolina Trout and Grits",
+              "description": "pork-brasised collard greens, redu mule grits",
+              "rating": 0,
+              "imageNameString": "chickenParmigiana",
+              "price": 14.00
+            },
+            {
+              "name": "Butcher Breakfast",
+              "description": "two eggs any style, house-made sausage, red mule grits, pork-brasised collard greens, biscuit",
+              "rating": 0,
+              "imageNameString": "butcherBreakfast",
+              "price": 12.00
+            },
+            {
+              "name": "Cast Iron Pancake",
+              "description": "SAVORY - fried egg, house-made sausage, whipped lil moo cheese OR SWEET - seasonal fruit, pecans, whipped lil moo cheese",
+              "rating": 0,
+              "imageNameString": "castIronPancake",
+              "price": 10.00
+            },
+            {
+              "name": "Chimichanga",
+              "description": "house-made chorizo, scrambled eggs, white cheddar, caramelized onions, arugula, spicy creme fraiche, small salad",
+              "rating": 0,
+              "imageNameString": "chimichanga",
+              "price": 12.00
+            }
+          ]
+    },{
+      "name": "Seabear Oyster Bar",
+      "description": "Seabear Oyster Bar merges high quality, innovatively prepared seafood with the warmth of casual bar fare. It’s meant to be a neighborhood place—intimate and unassuming.",
+      "imageNameString": "seaBear",
+      "address": "297 Prince Avenue, #10",
+      "city" : "Athens",
+      "state": "GA",
+      "zip": "30601",
+      "latitude": 33.960118,
+      "longitude": -83.383213,
+      "menuName": "Menu Name",
+      "dishes": [
+            {
+              "name": "crab and shrimp cakes ",
+              "description": "remoulade, micro greens",
+              "rating": 0,
+              "imageNameString": "crabShrimpCakes",
+              "price": 10.00
+            },
+            {
+              "name": "Steamed Mussels",
+              "description": "green curry, coconut milk, lemongrass, cilantro, fresh baguette",
+              "rating": 0,
+              "imageNameString": "steamedMussels",
+              "price": 10.00
+            },
+            {
+              "name": "Beer-braised Beeler's Bratwerst",
+              "description": "sauerkraut, mustard, greens in a Holman & Finch bun with fries",
+              "rating": 0,
+              "imageNameString": "bratwerst",
+              "price": 9.00
+            },
+            {
+              "name": "Tybee Island Shrimp & Grits",
+              "description": "andouille sausage, lacinato kale, celery, and onions over Red Mule grits",
+              "rating": 0,
+              "imageNameString": "shrimpGrits",
+              "price": 12.00
+            },
+            {
+              "name": "Crispy Scallion Pancake ",
+              "description": "sweet rock crab, spicy mayo, radish, little greens",
+              "rating": 0,
+              "imageNameString": "scallionPancake",
+              "price": 12.00
+            }
+          ]
+    }, {
+      "name": "Rumbi Island Grill",
+      "description": "Rumbi Island Grill is distinguished by our fresh, healthy and full flavored menu. The menu includes fresh gourmet rice bowls, crisp salads, soup, sandwiches, burgers, and entrèes. Favorites include the Voodoo Chicken Salad and Hawaiian Teriyaki Rice Bowl, along with main entrèes like the Luau Pork Plate and Volcano-Blackened Mahi or Salmon.",
+      "imageNameString": "rumbiLogo",
+      "address": "10365 South State St",
+      "city" : "Sandy",
+      "state": "UT",
+      "zip": "84070",
+      "latitude": -40.56,
+      "longitude": 111.89,
+      "menuName": "rumbiGrill",
+      "dishes": [
+            {
+              "name": "Rice Bowl",
+              "description": "Your choice of protein, rice, and sauteed vegitables.",
+              "rating": 5,
+              "imageNameString": "riceBowl",
+              "price": 7.95
+            },
+            {
+              "name": "Kahuna Burger",
+              "description": "Two USDA Choice ground beef patties marinated in teriyaki sauce, grilled pineapple, swiss cheese, lettuce, tomato, & mayo.",
+              "rating": 4,
+              "imageNameString": "chickenParmigiana",
+              "price": 14.95
+            },
+            {
+              "name": "VooDoo Salad",
+              "description": "A fresh lettuce blend with your choice protein, marinated in our famouse jerk seasoning, roma tomatoes, feta cheese and tortilla strips, with sesame ginger vinaigrette.",
+              "rating": 3,
+              "imageNameString": "voodooSalad",
+              "price": 9.95
+            },
+            {
+              "name": "Cabo Fish Tacos",
+              "description": "Tortillas stuffed with blackened seasonal fish, tropical salsa, cabbage, cilantro, scallions, and our cool Jalapeno Ranch Dressing. Served with Rumbi Rice (coconut rice and red beans).",
+              "rating": 4,
+              "imageNameString": "fishTaco",
+              "price": 7.95
+            },
+            {
+              "name": "Sweet Potato Fries",
+              "description": "A mix of sweet potato & regular french fries with Rumbi Fry Sauce. Zero trans fat per serving.",
+              "rating": 3,
+              "imageNameString": "rumbiFries",
+              "price": 4.95
+            }
+          ]
+    },{
+      "name": "Zupas",
+      "description": "We’re food explorers. With inspiration from all over the world, we are always hard at work in our test kitchen, creating the exceptional and unique soups.",
+      "imageNameString": "cafeZupas",
+      "address": "11463 South District Main Dr. #500",
+      "city" : "South Jordan",
+      "state": "UT",
+      "zip": "84095",
+      "latitude": -40.54,
+      "longitude": 111.98,
+      "menuName": "zupasCafe",
+      "dishes": [
+            {
+              "name": "Tomato Basil w/Orzo Pasta",
+              "description": "This soup has been a customer favorite since the beginning– it’s new and nostalgic at the same time. Ours features grown-up flavors of House-Made pesto that we make with six pounds of fresh basil, right off the stems in each of our kitchens. Sauteed aromatics and our special blend of spices this soup special. Garnished with fresh orzo pasta.",
+              "rating": 4,
+              "imageNameString": "tomatoBasil",
+              "price": 6.39
+            },
+            {
+              "name": "Garden Chowder",
+              "description": "We’ve loaded this delicious soup with with fresh vegetables like diced zucchini, fresh tomatoes, fire roasted corn, carrots, celery, and onions. Our special blend of herbs and spices combine with a lovely cream broth. This soup is a hearty, vegetarian-friendly treat that everyone will love.",
+              "rating": 3,
+              "imageNameString": "gardenChowder",
+              "price": 6.39
+            },
+            {
+              "name": "New England Clam Chowder",
+              "description": "Our signature blend of herbs and spices make this clam chowder a masterpiece. You’ll love the creamy broth and the careful balance between clams, red skin potatoes, and aromatic vegetables. Customize it with a mix-in like applewood-smoked bacon or focaccia croutons.",
+              "rating": 5,
+              "imageNameString": "clamChowder",
+              "price": 6.39
+            },
+            {
+              "name": "Yucatan Chicken Tortilla",
+              "description": "A deliciously spiced broth makes home to our all-natural grilled chicken, fire-roasted corn, and freshly-diced tomatoes. Topped with Hass avocado, tortilla strips, and lime, this soup makes a satisfying summer-time soup.",
+              "rating": 4,
+              "imageNameString": "yucatanChicken",
+              "price": 6.39
+            },
+            {
+              "name": "Lobster Bisque",
+              "description": "Fennel, carrots, celery, and onions saute with our signature blend of herbs and spices in a touch of sherry wine. We add in a real lobster blend and simmer in a creamy broth with fresh diced tomatoes. You have to taste it to believe it.",
+              "rating": 5,
+              "imageNameString": "lobsterBisque",
+              "price": 6.39
+            }
+          ]
+    } , {
+      "name": "Flying Sumo",
+      "description": "Restaurant, Japanese",
+      "imageNameString": "flyingSumo",
+      "address": "838 Park Ave",
+      "city" : "Park City",
+      "state": "UT",
+      "zip": "84060",
+      "latitude": -111.5010365,
+      "longitude": 40.6475648,
+      "menuName": "flyingSumo",
+      "dishes": [
+            {
+              "name": "Sake",
+              "description": "Salmon Nigiri Sushi",
+              "rating": 0,
+              "imageNameString": "sakeSalmon",
+              "price": 7.00
+            },
+            {
+              "name": "Maguro",
+              "description": "Bluefin Tuna Sashimi",
+              "rating": 0,
+              "imageNameString": "maguroSashimi",
+              "price": 18.0
+            },
+            {
+              "name": "Spicy Tuna",
+              "description": "Tuna,‎ green leaf, cucumber, sprout and spicy mayo",
+              "rating": 0,
+              "imageNameString": "spicyTuna",
+              "price": 12.0
+            },
+            {
+              "name": "Shrimp Tempura Roll",
+              "description": "Shrimp tempura, avocado, cucumber and spicy mayo",
+              "rating": 0,
+              "imageNameString": "shrimpTempura",
+              "price": 10.0
+            }
+          ]
+  },{
+      "name": "Yuki Yama Sushi",
+      "description": "Restaurant, Japanese",
+      "imageNameString": "yukiYama",
+      "address": "586 Main St",
+      "city" : "Park City",
+      "state": "UT",
+      "zip": "84060",
+      "latitude": -111.4988822,
+      "longitude": 40.6456343,
+      "menuName": "yukiYama",
+      "dishes": [
+            {
+              "name": "Hamachi",
+              "description": "Yellow Tail Nigiri Sushi",
+              "rating": 0,
+              "imageNameString": "hamachiYellowtail",
+              "price": 7.95
+            },
+            {
+              "name": "Ebi",
+              "description": "Sweet Shrimp Sashimi",
+              "rating": 0,
+              "imageNameString": "shrimpSashimi",
+              "price": 10.95
+            },
+            {
+              "name": "Mushroom Saute",
+              "description": "local mushroom sauté, dashi-butter, poached egg, toasted pine nuts ",
+              "rating": 0,
+              "imageNameString": "mushroomSaute",
+              "price": 13.95
+            },
+            {
+              "name": "Pork Ramen",
+              "description": "kurobuta pork belly, green onion, poached egg, kamaboko (japanese fish cake), house-made ramen broth",
+              "rating": 0,
+              "imageNameString": "porkRamen",
+              "price": 15.95
+            }
+          ]
+      }, {
+    		"name": "Taco Bell",
+    		"description": "Fast-food chain serving Mexican-inspired fare such as tacos, quesadillas & nachos.",
+    		"imageNameString": "tacoBellImage",
+    		"address": "10635 S State St",
+    		"city": "Sandy",
+    		"state": "UT",
+    		"zip": "84070",
+    		"latitude": -111.9716739,
+    		"longitude": 40.565225,
+    		"menuName": "tacoBellMenu",
+    		"dishes": [{
+    			"name": "Chicken Fiesta Taco Salad",
+    			"description": "Crispy tortilla bowl filled with marinated all - white meat chicken, and loaded with chunky beans, real cheddar cheese.",
+    			"rating": 0,
+    			"imageNameString": "fiestaTacoSaladImage",
+    			"price": 4.89
+    		}, {
+    			"name": "Crunchy Taco",
+    			"description": "Crunchy, corn taco shell filled with seasoned ground beef, crisp shredded lettuce, and real cheddar cheese",
+    			"rating": 0,
+    			"imageNameString": "crunchyTacoImage",
+    			"price": 1.19
+    		}, {
+    			"name": "Triple Steak Burrito",
+    			"description": "Triple portion of marinated thick cut steak, seasoned rice , cheddar cheese, fire roasted salsa , and reduced fat sour cream.",
+    			"rating": 0,
+    			"imageNameString": "steakBurritoImage",
+    			"price": 2.73
+    		}]
+    	}, {
+    		"name": "McDonalds",
+    		"description": "Classic, long-running fast-food chain known for its burgers, fries & shakes.",
+    		"imageNameString": "mcDonaldsImage",
+    		"address": "10381 Redwood Rd",
+    		"city": "South Jordan",
+    		"state": "UT",
+    		"zip": "84095",
+    		"latitude": -111.9380021,
+    		"longitude": 40.5626719,
+    		"menuName": "mcDonaldsMenu",
+    		"dishes": [{
+    			"name": "Premium Bacon Ranch Salad",
+    			"description": "Fresh mixed greens and sumptuous grape tomatoes, getting along brilliantly with hickory-smoked bacon",
+    			"rating": 0,
+    			"imageNameString": "ranchSaladImage",
+    			"price": 3.45
+    		}, {
+    			"name": "Angus Chipotle Bbq Bacon",
+    			"description": "100% angus beef smothered in sensationally sweet 'n smoky chipotle bbq sauce.",
+    			"rating": 0,
+    			"imageNameString": "bbqBaconImage",
+    			"price": 3.50
+    		}, {
+    			"name": "Chicken Mcnuggets",
+    			"description": "Tender, juicy chicken mcnuggets made with white meat, wrapped up in a crisp tempura batter.",
+    			"rating": 0,
+    			"imageNameString": "mcnuggetsImage",
+    			"price": 5.00
+    		}]
+    	}, {
+    		"name": "Wendy's",
+    		"description": "Fast-food burger chain known for its shakes, as well as sides such as chili & baked potatoes.",
+    		"imageNameString": "wendysImage",
+    		"address": "1598 S Jordan Pkwy",
+    		"city": "South Jordan",
+    		"state": "UT",
+    		"zip": "84095",
+    		"latitude": -111.9364786,
+    		"longitude": 40.5627861,
+    		"menuName": "wendysMenu",
+    		"dishes": [{
+    			"name": "Baja Salad",
+    			"description": "Hearty salad with a southwest flair, featuring fresh pico de gallo, guacamole and slow simmered chili.",
+    			"rating": 0,
+    			"imageNameString": "bajaSaladImage",
+    			"price": 3.45
+    		}, {
+    			"name": "Dave's Hot 'n Juicy 1/4 Lb. Single",
+    			"description": "Quarter-pound of 100% real north american beef and the freshest premium toppings on buttered, toasted buns - our new gold standard!",
+    			"rating": 0,
+    			"imageNameString": "hotJuicyImage",
+    			"price": 2.50
+    		}, {
+    			"name": "Jr. Bacon Cheeseburger",
+    			"description": "Hot 'n juicy beef. loaded with american cheese and fresh-cooked, thick-cut applewood smoked bacon. guaranteed to satisfy.",
+    			"rating": 0,
+    			"imageNameString": "baconCheeseBurgerImage",
+    			"price": 5.00
+    		}]
+    	}
+  ]
+}
