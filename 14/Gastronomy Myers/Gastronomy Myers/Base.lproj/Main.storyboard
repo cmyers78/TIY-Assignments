@@ -223,42 +223,65 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sfh-p5-rZS" id="ryh-BP-Zyl">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="154.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JfK-bj-cXo" userLabel="restImage">
-                                                    <rect key="frame" x="8" y="8" width="180" height="138.5"/>
+                                                    <rect key="frame" x="8" y="8" width="180" height="139"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="180" id="6sS-7S-3ML"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPu-QZ-usx" userLabel="restNameLabel">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPu-QZ-usx" userLabel="restNameLabel">
                                                     <rect key="frame" x="196" y="8" width="396" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" red="0.79018429489999997" green="0.22904752880000001" blue="0.026184083980000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cY-RF-WHF" userLabel="restAddLabel">
-                                                    <rect key="frame" x="196" y="58.5" width="396" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cY-RF-WHF" userLabel="restAddLabel">
+                                                    <rect key="frame" x="196" y="58" width="396" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="tgs-Oe-BWn"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.79018429489999997" green="0.22904752880000001" blue="0.026184083980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIV-CH-Vpg">
+                                                    <rect key="frame" x="196" y="87" width="384" height="38"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.79018429489999997" green="0.22904752880000001" blue="0.026184083980000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="JfK-bj-cXo" secondAttribute="bottom" constant="8" id="5re-a5-lcd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="tIV-CH-Vpg" secondAttribute="bottom" constant="21.5" id="6Bv-wl-E8N"/>
                                                 <constraint firstItem="TPu-QZ-usx" firstAttribute="top" secondItem="ryh-BP-Zyl" secondAttribute="top" constant="8" id="A2r-hT-66m"/>
                                                 <constraint firstItem="TPu-QZ-usx" firstAttribute="leading" secondItem="JfK-bj-cXo" secondAttribute="trailing" constant="8" id="DKU-dt-z7a"/>
+                                                <constraint firstItem="tIV-CH-Vpg" firstAttribute="top" secondItem="5cY-RF-WHF" secondAttribute="bottom" constant="8" id="Qyg-Dg-Abm"/>
+                                                <constraint firstItem="5cY-RF-WHF" firstAttribute="top" secondItem="ryh-BP-Zyl" secondAttribute="top" constant="58" id="SEm-Fq-gFk"/>
                                                 <constraint firstAttribute="bottom" secondItem="5cY-RF-WHF" secondAttribute="bottom" constant="75" id="Se5-Mb-4wD"/>
+                                                <constraint firstItem="tIV-CH-Vpg" firstAttribute="top" secondItem="5cY-RF-WHF" secondAttribute="bottom" constant="8" id="UAL-co-Tcg"/>
                                                 <constraint firstItem="JfK-bj-cXo" firstAttribute="top" secondItem="ryh-BP-Zyl" secondAttribute="top" constant="8" id="XVQ-vm-yl7"/>
+                                                <constraint firstItem="tIV-CH-Vpg" firstAttribute="leading" secondItem="JfK-bj-cXo" secondAttribute="trailing" constant="8" id="XZG-vt-qlb"/>
+                                                <constraint firstItem="5cY-RF-WHF" firstAttribute="top" secondItem="TPu-QZ-usx" secondAttribute="bottom" constant="29" id="aPa-si-OVf"/>
                                                 <constraint firstAttribute="trailing" secondItem="5cY-RF-WHF" secondAttribute="trailing" constant="8" id="bQC-wI-cGv"/>
                                                 <constraint firstAttribute="trailing" secondItem="TPu-QZ-usx" secondAttribute="trailing" constant="8" id="iSy-Os-ihu"/>
+                                                <constraint firstAttribute="trailing" secondItem="tIV-CH-Vpg" secondAttribute="trailing" constant="20" symbolic="YES" id="jQz-Tt-gjb"/>
                                                 <constraint firstItem="JfK-bj-cXo" firstAttribute="leading" secondItem="ryh-BP-Zyl" secondAttribute="leading" constant="8" id="qeX-Vt-s4N"/>
                                                 <constraint firstItem="5cY-RF-WHF" firstAttribute="leading" secondItem="JfK-bj-cXo" secondAttribute="trailing" constant="8" id="zQv-Nb-r24"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Se5-Mb-4wD"/>
+                                                    <exclude reference="UAL-co-Tcg"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="restAddLabel" destination="5cY-RF-WHF" id="Mmq-Gl-xA8"/>
+                                            <outlet property="restCSZLabel" destination="tIV-CH-Vpg" id="CTC-wg-4Mi"/>
                                             <outlet property="restImage" destination="JfK-bj-cXo" id="kMe-5f-188"/>
                                             <outlet property="restNameLabel" destination="TPu-QZ-usx" id="JKw-2V-bjE"/>
                                         </connections>

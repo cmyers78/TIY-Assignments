@@ -49,12 +49,23 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"restCell" forIndexPath:indexPath];
+    RestaurantTableViewCell *cell = (RestaurantTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"restCell" forIndexPath:indexPath];
     
     
     self.currentRestaurant =[self.restaurantArray objectAtIndex:indexPath.row];
     
     cell.restNameLabel.text = self.currentRestaurant.restName;
+    cell.restAddLabel.text = self.currentRestaurant.restAddress;
+    
+    NSString * concatenate = [self.currentRestaurant.restCity stringByAppendingString:@" "];
+    NSString * concatenate1 = [concatenate stringByAppendingString:self.currentRestaurant.restState];
+    NSString * concatenate2 = @", ";
+    NSString * concatenate3 = [concatenate1 stringByAppendingString:concatenate2];
+    NSString * finalConcat = [concatenate3 stringByAppendingString:self.currentRestaurant.restZip];
+    
+    cell.restCSZLabel.text = finalConcat;
+
+    
     
 
     
