@@ -27,21 +27,18 @@
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.theDishArray = [[NSMutableArray alloc] init];
-    
-    self.theRestaurant.dishesArray = self.theDishArray;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return [self.theDishArray count];
+    return [self.theRestaurant.dishesArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     DishTableViewCell * dishCell = (DishTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"dishCell" forIndexPath:indexPath];
     
-    self.menuDish = [self.theDishArray objectAtIndex:indexPath.row];
+    self.menuDish = [self.theRestaurant.dishesArray objectAtIndex:indexPath.row];
     
     dishCell.dishNameLabel.text = self.menuDish.dishName;
     dishCell.dishDescLabel.text = self.menuDish.dishDescription;

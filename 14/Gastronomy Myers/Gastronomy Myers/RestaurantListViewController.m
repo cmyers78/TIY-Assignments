@@ -67,11 +67,6 @@
     cell.restCSZLabel.text = finalConcat;
     cell.restImage.image = [UIImage imageNamed:self.currentRestaurant.restImageString];
     
-
-    
-    
-
-    
     return cell;
 }
 
