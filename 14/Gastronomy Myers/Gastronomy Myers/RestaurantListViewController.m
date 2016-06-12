@@ -64,6 +64,8 @@
     NSString * finalConcat = [concatenate3 stringByAppendingString:self.currentRestaurant.restZip];
     
     cell.restCSZLabel.text = finalConcat;
+    cell.restImage.image = [UIImage imageNamed:self.currentRestaurant.restImageString];
+    
 
     
     

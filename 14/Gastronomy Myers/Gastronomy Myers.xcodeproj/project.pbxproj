@@ -10,7 +10,7 @@
 		C63DFF1F1D0C937A00BBF3DC /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = C63DFF1E1D0C937A00BBF3DC /* Agent.m */; };
 		C63DFF231D0CA38500BBF3DC /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = C63DFF221D0CA38500BBF3DC /* Restaurant.m */; };
 		C63DFF261D0CA39900BBF3DC /* Dishes.m in Sources */ = {isa = PBXBuildFile; fileRef = C63DFF251D0CA39900BBF3DC /* Dishes.m */; };
-		C655003F1D0CA99400BE44F1 /* restaurantData.json in Resources */ = {isa = PBXBuildFile; fileRef = C655003E1D0CA99400BE44F1 /* restaurantData.json */; };
+		C66490D31D0DE3EC00A27A87 /* restaurantData.json in Resources */ = {isa = PBXBuildFile; fileRef = C66490D21D0DE3EC00A27A87 /* restaurantData.json */; };
 		C6D0F2291D0A069E004734E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F2281D0A069E004734E6 /* main.m */; };
 		C6D0F22C1D0A069E004734E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F22B1D0A069E004734E6 /* AppDelegate.m */; };
 		C6D0F2321D0A069E004734E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D0F2301D0A069E004734E6 /* Main.storyboard */; };
@@ -32,7 +32,7 @@
 		C63DFF221D0CA38500BBF3DC /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 		C63DFF241D0CA39900BBF3DC /* Dishes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dishes.h; path = ../Dishes.h; sourceTree = "<group>"; };
 		C63DFF251D0CA39900BBF3DC /* Dishes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dishes.m; path = ../Dishes.m; sourceTree = "<group>"; };
-		C655003E1D0CA99400BE44F1 /* restaurantData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurantData.json; sourceTree = "<group>"; };
+		C66490D21D0DE3EC00A27A87 /* restaurantData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurantData.json; sourceTree = "<group>"; };
 		C6D0F2241D0A069E004734E6 /* Gastronomy Myers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gastronomy Myers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D0F2281D0A069E004734E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6D0F22A1D0A069E004734E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,8 +107,8 @@
 				C6D0F2411D0A088F004734E6 /* Controller */,
 				C6D0F2301D0A069E004734E6 /* Main.storyboard */,
 				C6D0F2331D0A069E004734E6 /* Assets.xcassets */,
+				C66490D21D0DE3EC00A27A87 /* restaurantData.json */,
 				C6D0F2351D0A069E004734E6 /* LaunchScreen.storyboard */,
-				C655003E1D0CA99400BE44F1 /* restaurantData.json */,
 				C6D0F2381D0A069E004734E6 /* Info.plist */,
 				C6D0F2271D0A069E004734E6 /* Supporting Files */,
 			);
@@ -210,7 +210,7 @@
 			files = (
 				C6D0F2371D0A069E004734E6 /* LaunchScreen.storyboard in Resources */,
 				C6D0F2341D0A069E004734E6 /* Assets.xcassets in Resources */,
-				C655003F1D0CA99400BE44F1 /* restaurantData.json in Resources */,
+				C66490D31D0DE3EC00A27A87 /* restaurantData.json in Resources */,
 				C6D0F2321D0A069E004734E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

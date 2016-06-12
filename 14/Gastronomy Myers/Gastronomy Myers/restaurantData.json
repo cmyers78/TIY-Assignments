@@ -71,7 +71,7 @@
               "name": "North Carolina Trout and Grits",
               "description": "pork-brasised collard greens, redu mule grits",
               "rating": 0,
-              "imageNameString": "chickenParmigiana",
+              "imageNameString": "troutGrits",
               "price": 14.00
             },
             {
@@ -167,7 +167,7 @@
               "name": "Kahuna Burger",
               "description": "Two USDA Choice ground beef patties marinated in teriyaki sauce, grilled pineapple, swiss cheese, lettuce, tomato, & mayo.",
               "rating": 4,
-              "imageNameString": "chickenParmigiana",
+              "imageNameString": "kahunaBurger",
               "price": 14.95
             },
             {
