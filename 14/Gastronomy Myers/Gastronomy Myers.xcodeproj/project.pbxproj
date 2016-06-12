@@ -10,6 +10,7 @@
 		C63DFF1F1D0C937A00BBF3DC /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = C63DFF1E1D0C937A00BBF3DC /* Agent.m */; };
 		C63DFF231D0CA38500BBF3DC /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = C63DFF221D0CA38500BBF3DC /* Restaurant.m */; };
 		C63DFF261D0CA39900BBF3DC /* Dishes.m in Sources */ = {isa = PBXBuildFile; fileRef = C63DFF251D0CA39900BBF3DC /* Dishes.m */; };
+		C63FB8A31D0DF3FD00A236CA /* DishTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63FB8A21D0DF3FD00A236CA /* DishTableViewCell.m */; };
 		C66490D31D0DE3EC00A27A87 /* restaurantData.json in Resources */ = {isa = PBXBuildFile; fileRef = C66490D21D0DE3EC00A27A87 /* restaurantData.json */; };
 		C6D0F2291D0A069E004734E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F2281D0A069E004734E6 /* main.m */; };
 		C6D0F22C1D0A069E004734E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D0F22B1D0A069E004734E6 /* AppDelegate.m */; };
@@ -32,6 +33,8 @@
 		C63DFF221D0CA38500BBF3DC /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 		C63DFF241D0CA39900BBF3DC /* Dishes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dishes.h; path = ../Dishes.h; sourceTree = "<group>"; };
 		C63DFF251D0CA39900BBF3DC /* Dishes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dishes.m; path = ../Dishes.m; sourceTree = "<group>"; };
+		C63FB8A11D0DF3FD00A236CA /* DishTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishTableViewCell.h; sourceTree = "<group>"; };
+		C63FB8A21D0DF3FD00A236CA /* DishTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishTableViewCell.m; sourceTree = "<group>"; };
 		C66490D21D0DE3EC00A27A87 /* restaurantData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurantData.json; sourceTree = "<group>"; };
 		C6D0F2241D0A069E004734E6 /* Gastronomy Myers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gastronomy Myers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D0F2281D0A069E004734E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 		C6D0F2541D0A22C6004734E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C63FB8A11D0DF3FD00A236CA /* DishTableViewCell.h */,
+				C63FB8A21D0DF3FD00A236CA /* DishTableViewCell.m */,
 				C6D0F2511D0A22C1004734E6 /* RestaurantTableViewCell.h */,
 				C6D0F2521D0A22C1004734E6 /* RestaurantTableViewCell.m */,
 			);
@@ -226,6 +231,7 @@
 				C6D0F2471D0A092A004734E6 /* RestaurantListViewController.m in Sources */,
 				C6D0F24D1D0A0A27004734E6 /* RateDishViewController.m in Sources */,
 				C63DFF261D0CA39900BBF3DC /* Dishes.m in Sources */,
+				C63FB8A31D0DF3FD00A236CA /* DishTableViewCell.m in Sources */,
 				C63DFF1F1D0C937A00BBF3DC /* Agent.m in Sources */,
 				C6D0F2441D0A08AE004734E6 /* HomeScreenViewController.m in Sources */,
 				C6D0F24A1D0A09A5004734E6 /* MenuListViewController.m in Sources */,

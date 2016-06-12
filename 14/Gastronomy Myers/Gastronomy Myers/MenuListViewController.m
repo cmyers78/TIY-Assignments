@@ -7,24 +7,59 @@
 //
 
 #import "MenuListViewController.h"
+#import "Restaurant.h"
+#import "Dishes.h"
+#import "RestaurantListViewController.h"
+#import "DishTableViewCell.h"
+#import "RestaurantTableViewCell.h"
 
-@interface MenuListViewController ()
+
+@interface MenuListViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) Dishes * menuDish;
+@property (strong, nonatomic) NSMutableArray * theDishArray;
 
 @end
 
 @implementation MenuListViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.theDishArray = [[NSMutableArray alloc] init];
+    
+    self.theRestaurant.dishesArray = self.theDishArray;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return [self.theDishArray count];
 }
 
-/*
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    DishTableViewCell * dishCell = (DishTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"dishCell" forIndexPath:indexPath];
+    
+    self.menuDish = [self.theDishArray objectAtIndex:indexPath.row];
+    
+    dishCell.dishNameLabel.text = self.menuDish.dishName;
+    dishCell.dishDescLabel.text = self.menuDish.dishDescription;
+    
+    dishCell.dishPriceLabel.text = [NSString stringWithFormat:@"%@", self.menuDish.dishPrice];
+    
+    
+    dishCell.dishRatingLabel.text = [NSString stringWithFormat:@"%@", self.menuDish.dishRating];
+    dishCell.dishListImage.image = [UIImage imageNamed:self.menuDish.imageNameString];
+    
+    
+    return dishCell;
+    
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -32,6 +67,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end

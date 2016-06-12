@@ -10,6 +10,7 @@
 #import "Restaurant.h"
 #import "Dishes.h"
 #import "RestaurantTableViewCell.h"
+#import "MenuListViewController.h"
 
 
 @interface RestaurantListViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -76,13 +77,21 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    self.currentRestaurant = [self.restaurantArray objectAtIndex:indexPath.row];
+    
+    //self.currentRestaurant.dishesArray = [self.restaurantArray objectAtIndex:indexPath.row];
+    
+    [self performSegueWithIdentifier:@"menuSegue" sender:nil];
+    
 }
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    MenuListViewController *viewController = (MenuListViewController *) segue.destinationViewController;
+    viewController.theRestaurant = self.currentRestaurant;
+    
 }
 
 

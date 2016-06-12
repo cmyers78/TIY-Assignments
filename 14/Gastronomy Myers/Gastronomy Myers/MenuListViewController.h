@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Restaurant.h"
+#import "Dishes.h"
+#import "RestaurantListViewController.h"
+#import "DishTableViewCell.h"
+#import "RestaurantTableViewCell.h"
 
 @interface MenuListViewController : UIViewController
+
+@property (strong, nonatomic) Restaurant *theRestaurant;
+
+
 
 @end
