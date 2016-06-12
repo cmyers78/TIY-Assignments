@@ -226,19 +226,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="154.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JfK-bj-cXo">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JfK-bj-cXo" userLabel="restImage">
                                                     <rect key="frame" x="8" y="8" width="180" height="138.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="180" id="6sS-7S-3ML"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPu-QZ-usx">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPu-QZ-usx" userLabel="restNameLabel">
                                                     <rect key="frame" x="196" y="8" width="396" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cY-RF-WHF">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cY-RF-WHF" userLabel="restAddLabel">
                                                     <rect key="frame" x="196" y="58.5" width="396" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -257,6 +257,11 @@
                                                 <constraint firstItem="5cY-RF-WHF" firstAttribute="leading" secondItem="JfK-bj-cXo" secondAttribute="trailing" constant="8" id="zQv-Nb-r24"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="restAddLabel" destination="5cY-RF-WHF" id="Mmq-Gl-xA8"/>
+                                            <outlet property="restImage" destination="JfK-bj-cXo" id="kMe-5f-188"/>
+                                            <outlet property="restNameLabel" destination="TPu-QZ-usx" id="JKw-2V-bjE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -275,7 +280,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="restaurantTableView" destination="RtN-Yw-KwT" id="vZy-VS-Qs2"/>
+                        <outlet property="tableView" destination="RtN-Yw-KwT" id="gur-Xn-3W5"/>
                         <segue destination="YAF-RN-ODx" kind="show" identifier="menuSegue" id="7hB-9E-w8A"/>
                     </connections>
                 </viewController>

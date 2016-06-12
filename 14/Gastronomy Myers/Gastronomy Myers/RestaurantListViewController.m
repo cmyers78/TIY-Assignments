@@ -9,15 +9,18 @@
 #import "RestaurantListViewController.h"
 #import "Restaurant.h"
 #import "Dishes.h"
+#import "RestaurantTableViewCell.h"
 
 
 @interface RestaurantListViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITableView *restaurantTableView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 
 @property (strong, nonatomic) NSMutableArray * restaurantArray;
 
 @property (strong, nonatomic) Restaurant * currentRestaurant;
+
 
 @end
 
@@ -48,13 +51,19 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"restCell" forIndexPath:indexPath];
     
-    self.currentRestaurant = [self.restaurantArray objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = self.currentRestaurant.restName;
+    self.currentRestaurant =[self.restaurantArray objectAtIndex:indexPath.row];
+    
+    cell.restNameLabel.text = self.currentRestaurant.restName;
+    
+
     
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
