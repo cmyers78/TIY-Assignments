@@ -8,7 +8,12 @@
 
 #import "RateDishViewController.h"
 
-@interface RateDishViewController ()
+@interface RateDishViewController () {
+    float rated;
+}
+
+@property (weak, nonatomic) IBOutlet UISlider *ratingSlider;
+@property (weak, nonatomic) IBOutlet UILabel *ratingLabel;
 
 @end
 
@@ -16,22 +21,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    rated = [self.currentRating floatValue];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self updateRatingValue];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) updateRatingValue {
+    self.ratingLabel.text = [NSString stringWithFormat:@"%1.0f", rated];
+    self.ratingSlider.value = rated;
 }
-*/
+
+- (IBAction)ratingSliderTapped:(UISlider *)sender {
+    
+    rated = ceilf(self.ratingSlider.value);
+    [self updateRatingValue];
+    
+}
 
 @end

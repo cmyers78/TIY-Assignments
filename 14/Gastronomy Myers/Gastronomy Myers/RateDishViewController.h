@@ -10,4 +10,7 @@
 
 @interface RateDishViewController : UIViewController
 
+@property (nonatomic, strong) NSNumber * currentRating;
+
+
 @end

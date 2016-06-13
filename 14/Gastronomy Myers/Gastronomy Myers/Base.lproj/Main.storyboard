@@ -223,7 +223,7 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sfh-p5-rZS" id="ryh-BP-Zyl">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="155"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="154.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JfK-bj-cXo" userLabel="restImage">
@@ -463,10 +463,71 @@
                     <view key="view" contentMode="scaleToFill" id="dct-dq-TKB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GASTRONOMY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nf-Wz-Nsv">
+                                <rect key="frame" x="184" y="40" width="233" height="44"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="36"/>
+                                <color key="textColor" red="0.79018429489999997" green="0.22904752880000001" blue="0.026184083980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLEASE RATE YOUR DISH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2T-5f-WW3">
+                                <rect key="frame" x="167" y="125" width="266" height="29"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="24"/>
+                                <color key="textColor" red="0.79018429489999997" green="0.22904752880000001" blue="0.026184083980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCV-Xy-RNF">
+                                <rect key="frame" x="285.5" y="259" width="29.5" height="73"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="53"/>
+                                <color key="textColor" red="0.79018429489999997" green="0.22904752880000001" blue="0.026184083980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="c30-fl-erw">
+                                <rect key="frame" x="68" y="199" width="465" height="31"/>
+                                <connections>
+                                    <action selector="ratingSliderTapped:" destination="nCL-g4-5nY" eventType="valueChanged" id="qP7-L1-Lzr"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTs-oa-vyi">
+                                <rect key="frame" x="276" y="340" width="48" height="30"/>
+                                <state key="normal" title="CLOSE">
+                                    <color key="titleColor" red="0.79018429489999997" green="0.22904752880000001" blue="0.026184083980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SWD-XM-87L" kind="unwind" unwindAction="unwindForSegue:" id="U2c-mi-6OJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TTs-oa-vyi" firstAttribute="centerX" secondItem="dct-dq-TKB" secondAttribute="centerX" id="2C3-Ld-jYU"/>
+                            <constraint firstItem="6Nf-Wz-Nsv" firstAttribute="centerX" secondItem="dct-dq-TKB" secondAttribute="centerX" id="DoP-ku-QIz"/>
+                            <constraint firstItem="6Nf-Wz-Nsv" firstAttribute="leading" secondItem="dct-dq-TKB" secondAttribute="leading" constant="184" id="K7I-bk-VTi"/>
+                            <constraint firstItem="c30-fl-erw" firstAttribute="centerX" secondItem="dct-dq-TKB" secondAttribute="centerX" id="Mcv-Dx-BkN"/>
+                            <constraint firstItem="d2T-5f-WW3" firstAttribute="centerX" secondItem="dct-dq-TKB" secondAttribute="centerX" id="V3Z-WM-hJO"/>
+                            <constraint firstItem="TTs-oa-vyi" firstAttribute="top" secondItem="rCV-Xy-RNF" secondAttribute="bottom" constant="8" id="WL6-MG-dJ6"/>
+                            <constraint firstItem="c30-fl-erw" firstAttribute="top" secondItem="d2T-5f-WW3" secondAttribute="bottom" constant="45" id="aeD-Di-VLN"/>
+                            <constraint firstItem="c30-fl-erw" firstAttribute="leading" secondItem="dct-dq-TKB" secondAttribute="leadingMargin" constant="50" id="cbE-ON-iNu"/>
+                            <constraint firstItem="rCV-Xy-RNF" firstAttribute="centerX" secondItem="dct-dq-TKB" secondAttribute="centerX" id="f9x-VS-upa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c30-fl-erw" secondAttribute="trailing" constant="49" id="gLI-uC-YE8"/>
+                            <constraint firstItem="d2T-5f-WW3" firstAttribute="top" secondItem="6Nf-Wz-Nsv" secondAttribute="bottom" constant="41" id="h5o-Uu-dGh"/>
+                            <constraint firstItem="rCV-Xy-RNF" firstAttribute="top" secondItem="c30-fl-erw" secondAttribute="bottom" constant="30" id="k0B-Ye-26L"/>
+                            <constraint firstItem="6Nf-Wz-Nsv" firstAttribute="top" secondItem="rLp-J2-0Iv" secondAttribute="bottom" constant="20" id="sVB-bm-Jos"/>
+                            <constraint firstItem="c30-fl-erw" firstAttribute="centerX" secondItem="dct-dq-TKB" secondAttribute="centerX" id="uHL-Or-R9v"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Mcv-Dx-BkN"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="ratingLabel" destination="rCV-Xy-RNF" id="a2u-xA-Btd"/>
+                        <outlet property="ratingSlider" destination="c30-fl-erw" id="NsN-ED-riB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eqc-2c-I7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="SWD-XM-87L" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3879" y="327"/>
         </scene>

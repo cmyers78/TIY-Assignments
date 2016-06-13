@@ -12,6 +12,7 @@
 #import "RestaurantListViewController.h"
 #import "DishTableViewCell.h"
 #import "RestaurantTableViewCell.h"
+#import "RateDishViewController.h"
 
 
 @interface MenuListViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -55,14 +56,36 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    self.menuDish = [self.theRestaurant.dishesArray objectAtIndex:indexPath.row];
+    
+    
+    [self performSegueWithIdentifier:@"rateDishSegue" sender:nil];
+    
+    
 }
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    
+    if([segue.identifier isEqualToString:@"rateDishSegue"]) {
+        
+        RateDishViewController * rateView = (RateDishViewController *)segue.destinationViewController;
+        
+        rateView.currentRating = self.menuDish.dishRating;
+        
+    }
 }
 
+-(IBAction)unwindForSegue:(UIStoryboardSegue *)segue {
+    
+    RateDishViewController *rateViewBack = (RateDishViewController *) segue.sourceViewController;
+    
+    self.menuDish.dishRating = rateViewBack.currentRating;
+    
+    //self.dishRatingLabel.text = [NSString stringWithFormat:@"%@", self.menuDish.dishRating];
+    // How do I update the dishRatingLabel?
+}
 
 @end
