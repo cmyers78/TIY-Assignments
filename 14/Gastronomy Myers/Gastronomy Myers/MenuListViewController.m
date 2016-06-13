@@ -43,12 +43,11 @@
     dishCell.dishNameLabel.text = self.menuDish.dishName;
     dishCell.dishDescLabel.text = self.menuDish.dishDescription;
     
-    dishCell.dishPriceLabel.text = [NSString stringWithFormat:@"%@", self.menuDish.dishPrice];
+    dishCell.dishPriceLabel.text = [NSString stringWithFormat:@"$%@", self.menuDish.dishPrice];
     
     
-    dishCell.dishRatingLabel.text = [NSString stringWithFormat:@"%@", self.menuDish.dishRating];
+    dishCell.dishRatingLabel.text = [NSString stringWithFormat:@"Rating: %@", self.menuDish.dishRating];
     dishCell.dishListImage.image = [UIImage imageNamed:self.menuDish.imageNameString];
-    
     
     return dishCell;
     
