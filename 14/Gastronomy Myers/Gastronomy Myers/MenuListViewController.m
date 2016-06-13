@@ -18,7 +18,7 @@
 @interface MenuListViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) Dishes * menuDish;
+@property (weak, nonatomic) Dishes * menuDish;
 @property (strong, nonatomic) NSMutableArray * theDishArray;
 
 @end
@@ -83,6 +83,12 @@
     RateDishViewController *rateViewBack = (RateDishViewController *) segue.sourceViewController;
     
     self.menuDish.dishRating = rateViewBack.currentRating;
+    
+    NSLog(@"currentRating == %@", rateViewBack.currentRating);
+    
+    NSLog(@"dishRating == %@", self.menuDish.dishRating);
+    
+    [self.tableView reloadData];
     
     //self.dishRatingLabel.text = [NSString stringWithFormat:@"%@", self.menuDish.dishRating];
     // How do I update the dishRatingLabel?

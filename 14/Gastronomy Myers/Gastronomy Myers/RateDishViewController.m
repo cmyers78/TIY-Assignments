@@ -33,6 +33,8 @@
 - (void) updateRatingValue {
     self.ratingLabel.text = [NSString stringWithFormat:@"%1.0f", rated];
     self.ratingSlider.value = rated;
+    
+    self.currentRating = [NSNumber numberWithFloat:rated];
 }
 
 - (IBAction)ratingSliderTapped:(UISlider *)sender {

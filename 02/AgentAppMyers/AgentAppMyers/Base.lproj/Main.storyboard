@@ -57,7 +57,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="TIYLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yit-ft-7mE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIYLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yit-ft-7mE">
                                 <rect key="frame" x="180" y="340" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yit-ft-7mE" secondAttribute="height" multiplier="1:1" id="Uz9-OL-6Yj"/>
