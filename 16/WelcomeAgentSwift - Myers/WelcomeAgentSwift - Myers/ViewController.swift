@@ -35,13 +35,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.welcomeLabel.text = "DENIED"
         }
     }
-    // this function is not working correctly
+    // MARK: UITextFieldDelegate Function
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == agentNameText {
+            passwordText.becomeFirstResponder()
+        } else {
+        
         textField.resignFirstResponder()
+        }
         return true
     }
-
+    
+    // MARK: Action Function
     @IBAction func authenticatePressed(sender: UIButton) {
         authenticate()
         
