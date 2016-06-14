@@ -31,8 +31,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER DESTINATION DATE" textAlignment="center" minimumFontSize="34" translatesAutoresizingMaskIntoConstraints="NO" id="cbp-or-Yjb">
-                                <rect key="frame" x="132" y="113" width="335" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MMDDYYYY" textAlignment="center" minimumFontSize="34" translatesAutoresizingMaskIntoConstraints="NO" id="cbp-or-Yjb">
+                                <rect key="frame" x="225" y="113" width="150" height="30"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="34"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>

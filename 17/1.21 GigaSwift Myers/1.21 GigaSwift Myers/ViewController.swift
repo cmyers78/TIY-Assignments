@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
-
+class ViewController: UIViewController, UITextFieldDelegate
+{
     @IBOutlet weak var enterDestination: UITextField!
     @IBOutlet weak var presentTime: UILabel!
     @IBOutlet weak var lastTimeDeparted: UILabel!
@@ -35,7 +35,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     }
     
-    func enteredDate()   {
+    func enteredDate()
+    {
         
         // grab the date from the entered date text box
         // use the formatter to take it from mmddyyyy to MM d, yyyy
@@ -46,9 +47,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // use if statement to make sure that something exists inside the variable
         // thanks so much stupid optionals!
         
-        if let dateEntered = self.enterDestination.text {
+        if let dateEntered = self.enterDestination.text
+        {
             
-            if let theDate = self.formattedDate.dateFromString(dateEntered) {
+            if let theDate = self.formattedDate.dateFromString(dateEntered)
+            {
         
                 self.formattedDate.dateFormat = "MMM d, yyyy"
                 self.enterDestination.text = self.formattedDate.stringFromDate(theDate)
@@ -56,7 +59,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
         enteredDate()
         self.enterDestination.resignFirstResponder()
         
@@ -64,9 +68,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     
-    func updateMiles() {
+    func updateMiles()
+    {
         self.milesPerHour += 1
-        if milesPerHour == 88 {
+        if milesPerHour == 88
+        {
             self.timer?.invalidate()
             self.performSegueWithIdentifier("popupSegue", sender: self)
         }
@@ -74,15 +80,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    func reset() {
+    func reset()
+    {
         self.lastTimeDeparted.text = "--- -- ----"
         self.enterDestination.text = ""
         self.currentSpeed.text = "0 MPH"
         milesPerHour = 0
     }
     
-    @IBAction func unwindSegue (segue: UIStoryboardSegue) {
-    reset()
+    @IBAction func unwindSegue (segue: UIStoryboardSegue)
+    {
+        reset()
     }
     
     // update current speed label
@@ -91,15 +99,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // or in the button action. We're doing it in the button
     
     
-    @IBAction func travelBackPressed(sender: UIButton) {
+    @IBAction func travelBackPressed(sender: UIButton)
+    {
         self.lastTimeDeparted.text = self.presentTime.text
         self.milesPerHour = 0
         let speed = 0.1
         
          self.timer = NSTimer.scheduledTimerWithTimeInterval(speed, target: self, selector: #selector(updateMiles), userInfo: nil, repeats: true);
-        
     }
-
 
 }
 
