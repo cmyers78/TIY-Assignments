@@ -12,19 +12,39 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var agentNameText: UITextField!
     
+    @IBOutlet weak var passwordText: UITextField!
+    
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
+    let agentName = "Chris Myers"
+    let password = "1234"
+    let agentList = [ ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    func authenticate() {
+        if self.agentNameText.text == agentName && self.passwordText.text == password {
+            self.view.backgroundColor = UIColor(red: 107/255, green: 142/255, blue: 35/255, alpha: 1)
+            self.welcomeLabel.text = "ACCESS GRANTED"
+            
+        } else {
+            self.view.backgroundColor = UIColor(red: 222/255, green: 15/255, blue: 15/255, alpha: 1)
+            self.welcomeLabel.text = "DENIED"
+        }
+    }
+    // this function is not working correctly
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        
         textField.resignFirstResponder()
-        
         return true
     }
 
+    @IBAction func authenticatePressed(sender: UIButton) {
+        authenticate()
+        
+    }
 }
 

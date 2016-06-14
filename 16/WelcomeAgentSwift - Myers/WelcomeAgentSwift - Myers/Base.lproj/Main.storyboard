@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="64k-g2-VLi">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="64k-g2-VLi">
                                 <rect key="frame" x="189" y="102" width="222" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="222" id="NQG-e9-fGi"/>
@@ -25,15 +25,77 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u4E-3L-NH1">
+                                <rect key="frame" x="189" y="173" width="222" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="ogv-m9-01Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZQ-OU-E4C">
+                                <rect key="frame" x="193" y="226" width="214" height="49"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="30"/>
+                                <state key="normal" title="AUTHENTICATE">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="authenticatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uF8-2j-LaF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ht7-7J-Vx0">
+                                <rect key="frame" x="193" y="218" width="214" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="xEe-ge-BiT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TIYLogo" translatesAutoresizingMaskIntoConstraints="NO" id="P8j-fD-bhv">
+                                <rect key="frame" x="180" y="283" width="240" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="X6y-Yj-yBR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="X6y-Yj-yBR"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="64k-g2-VLi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5My-Ae-dpl"/>
+                            <constraint firstItem="ht7-7J-Vx0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8jM-AT-Sw0"/>
+                            <constraint firstItem="gZQ-OU-E4C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9rD-RU-2Gd"/>
+                            <constraint firstItem="P8j-fD-bhv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-11" id="Av3-mf-Ckz"/>
+                            <constraint firstItem="P8j-fD-bhv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FiH-HP-6Le"/>
+                            <constraint firstItem="ht7-7J-Vx0" firstAttribute="top" secondItem="u4E-3L-NH1" secondAttribute="bottom" constant="15" id="Mle-wR-Kw0"/>
+                            <constraint firstItem="P8j-fD-bhv" firstAttribute="top" secondItem="gZQ-OU-E4C" secondAttribute="bottom" constant="8" id="QNW-gL-BtA"/>
+                            <constraint firstItem="P8j-fD-bhv" firstAttribute="top" secondItem="gZQ-OU-E4C" secondAttribute="bottom" constant="8" id="aLX-Ar-eFH"/>
+                            <constraint firstItem="P8j-fD-bhv" firstAttribute="top" secondItem="gZQ-OU-E4C" secondAttribute="bottom" constant="8" id="diF-3r-KfE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="P8j-fD-bhv" secondAttribute="bottom" constant="130" id="fbR-q7-4Ah"/>
+                            <constraint firstItem="u4E-3L-NH1" firstAttribute="top" secondItem="64k-g2-VLi" secondAttribute="bottom" constant="41" id="ff7-2o-2tv"/>
+                            <constraint firstItem="gZQ-OU-E4C" firstAttribute="top" secondItem="ht7-7J-Vx0" secondAttribute="bottom" constant="8" id="n39-0X-ggD"/>
                             <constraint firstItem="64k-g2-VLi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="82" id="orj-3m-C39"/>
+                            <constraint firstItem="u4E-3L-NH1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s3C-J5-EGw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="P8j-fD-bhv" secondAttribute="bottom" constant="130" id="vZ5-qh-hJO"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Av3-mf-Ckz"/>
+                                <exclude reference="QNW-gL-BtA"/>
+                                <exclude reference="diF-3r-KfE"/>
+                                <exclude reference="fbR-q7-4Ah"/>
+                                <exclude reference="vZ5-qh-hJO"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="agentNameText" destination="64k-g2-VLi" id="LQm-J9-XQQ"/>
+                        <outlet property="passwordText" destination="u4E-3L-NH1" id="OYt-Ww-xMq"/>
+                        <outlet property="welcomeLabel" destination="ht7-7J-Vx0" id="Ozu-uu-tUw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -41,4 +103,7 @@
             <point key="canvasLocation" x="245" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TIYLogo" width="240" height="212"/>
+    </resources>
 </document>
