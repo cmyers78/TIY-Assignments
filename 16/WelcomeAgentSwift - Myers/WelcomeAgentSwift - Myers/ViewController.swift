@@ -18,7 +18,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     let agentName = "Chris Myers"
     let password = "1234"
-    let agentList = [ ]
+    var agentList = [ ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func authenticate() {
         if self.agentNameText.text == agentName && self.passwordText.text == password {
             self.view.backgroundColor = UIColor(red: 107/255, green: 142/255, blue: 35/255, alpha: 1)
-            self.welcomeLabel.text = "ACCESS GRANTED"
+            
+            agentList = agentName.componentsSeparatedByString(" ")
+            self.welcomeLabel.text = "ACCESS GRANTED AGENT \(agentList[1])"
+            
             
         } else {
             self.view.backgroundColor = UIColor(red: 222/255, green: 15/255, blue: 15/255, alpha: 1)
