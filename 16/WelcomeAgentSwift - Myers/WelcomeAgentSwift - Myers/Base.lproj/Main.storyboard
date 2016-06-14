@@ -34,7 +34,7 @@
                                     <constraint firstAttribute="width" constant="222" id="ogv-m9-01Y"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="XvU-RP-7Ga"/>
                                 </connections>
