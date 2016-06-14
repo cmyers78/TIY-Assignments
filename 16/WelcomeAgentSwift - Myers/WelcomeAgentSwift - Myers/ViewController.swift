@@ -20,7 +20,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     let password = "1234"
     var agentList = [ ]
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -32,7 +31,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             
             agentList = agentName.componentsSeparatedByString(" ")
             self.welcomeLabel.text = "ACCESS GRANTED AGENT \(agentList[1])"
-            
             
         } else {
             self.view.backgroundColor = UIColor(red: 222/255, green: 15/255, blue: 15/255, alpha: 1)
