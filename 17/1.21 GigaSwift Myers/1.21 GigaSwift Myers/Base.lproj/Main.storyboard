@@ -149,10 +149,19 @@
                                     <segue destination="0a8-Pu-BRk" kind="unwind" unwindAction="unwindSegue:" id="2nP-gG-F7R"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back-to-the-future-logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="y0b-a4-8c7">
+                                <rect key="frame" x="123" y="28" width="354" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="354" id="zCv-zR-JTr"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="PhI-cV-Eex" firstAttribute="centerY" secondItem="mso-WY-n73" secondAttribute="centerY" id="0Hz-bd-4sW"/>
+                            <constraint firstItem="y0b-a4-8c7" firstAttribute="centerX" secondItem="mso-WY-n73" secondAttribute="centerX" id="4Zy-Z3-ifB"/>
+                            <constraint firstItem="y0b-a4-8c7" firstAttribute="top" secondItem="1u7-Ss-tTA" secondAttribute="bottom" constant="8" id="EOY-d0-mUQ"/>
+                            <constraint firstItem="PhI-cV-Eex" firstAttribute="top" secondItem="y0b-a4-8c7" secondAttribute="bottom" constant="35" id="PHF-Mq-xYu"/>
                             <constraint firstItem="PhI-cV-Eex" firstAttribute="centerX" secondItem="mso-WY-n73" secondAttribute="centerX" id="QWS-lc-wuI"/>
                         </constraints>
                     </view>
@@ -181,4 +190,7 @@
             <point key="canvasLocation" x="407" y="-355"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back-to-the-future-logo.jpg" width="400" height="261"/>
+    </resources>
 </document>
