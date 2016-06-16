@@ -36,15 +36,15 @@ class MoviesTableViewController: UITableViewController {
         
         let currentMovie = self.moviesArray[indexPath.row]
         
-//        if let imageURL = NSURL(string: "http://image.tmdb.org/t/p/w500\(currentMovie.posterPath)") {
-//            if let data = NSData(contentsOfURL: imageURL) {
-//                
-//                cell.imageView?.image = UIImage(data: data)
-//            }
-//        }
+        if let imageURL = NSURL(string: currentMovie.posterPath) {
+            if let data = NSData(contentsOfURL: imageURL) {
+                
+                cell.imageView?.image = UIImage(data: data)
+            }
+        }
         
         cell.textLabel?.text = currentMovie.movieTitle
-        cell.imageView?.image = UIImage (named: currentMovie.posterPath)
+       // cell.imageView?.image = UIImage (named: currentMovie.posterPath)
         
         return cell
     }
