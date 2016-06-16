@@ -12,6 +12,7 @@ class MoviesTableViewController: UITableViewController {
     
     var moviesArray = [Movie]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,12 +28,23 @@ class MoviesTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return self.moviesArray.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("movieCell", forIndexPath: indexPath)
+        
+        let currentMovie = self.moviesArray[indexPath.row]
+        
+        
+        cell.textLabel?.text = currentMovie.movieTitle
+        cell.imageView?.image = UIImage (named: "http://image.tmdb.org/t/p/w500\(currentMovie.posterPath)")
+        
+        return cell
     }
 
   
-    func parseData()
-    {
+    func parseData() {
         // 1. create type alias
         typealias JSONDictionary = [String:AnyObject]
         typealias JSONArray = [JSONDictionary]
@@ -52,12 +64,12 @@ class MoviesTableViewController: UITableViewController {
                             
                             for resultsDict in resultsArray {
                                 
-                                var theMovie = Movie()
+                                let theMovie = Movie()
                                 
                                 if let posterPath = resultsDict["poster_path"] as? String {
-                                    print(posterPath)
+                                    //print(posterPath)
                                     
-                                    theMovie.posterPath = posterPath
+                                    theMovie.posterPath = "http://image.tmdb.org/t/p/w500\(posterPath)"
                                     
                                 } else {
                                     print("I couldn't parse the poster path")
