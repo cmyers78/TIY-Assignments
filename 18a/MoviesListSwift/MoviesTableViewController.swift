@@ -18,21 +18,16 @@ class MoviesTableViewController: UITableViewController {
         parseData()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
   
@@ -43,22 +38,20 @@ class MoviesTableViewController: UITableViewController {
         typealias JSONArray = [JSONDictionary]
         
         // 2. get json data as NSURL
-        if let filePath = NSBundle.mainBundle().URLForResource("popular", withExtension: "json")
-        {
+        if let filePath = NSBundle.mainBundle().URLForResource("popular", withExtension: "json") {
         // 3. create data object & pass the url to it
-            if let data = NSData(contentsOfURL: filePath)
-            {
+            if let data = NSData(contentsOfURL: filePath) {
                 
-                do
-                {
+                do {
         // 4. create a dictionary of the data and cast it as the JSONDictionary typealias
-                    if let jsonDict = try NSJSONSerialization.JSONObjectWithData(data, options: []) as? JSONDictionary
-                    {
+                    if let jsonDict = try NSJSONSerialization.JSONObjectWithData(data, options: []) as? JSONDictionary {
+                        
         // 5. create a results array from the jsonDict.  It is cast as a JSONArray
-                        if let resultsArray = jsonDict["results"] as? JSONArray
-                        { print(jsonDict)
-                            for resultsDict in resultsArray
-                            {
+                        if let resultsArray = jsonDict["results"] as? JSONArray {
+                            print(jsonDict)
+                            
+                            for resultsDict in resultsArray {
+                                
                                 var theMovie = Movie()
                                 
                                 if let posterPath = resultsDict["poster_path"] as? String {
@@ -66,15 +59,13 @@ class MoviesTableViewController: UITableViewController {
                                     
                                     theMovie.posterPath = posterPath
                                     
-                                } else
-                                {
+                                } else {
                                     print("I couldn't parse the poster path")
                                 }
                                 
                                 if let adult = resultsDict["adult"] as? Bool {
                                     theMovie.adultRated = adult
-                                } else
-                                {
+                                } else {
                                     print("I could parse the adult rating")
                                 }
                                 if let overview = resultsDict["overview"] as? String {
