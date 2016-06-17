@@ -25,22 +25,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         
-        
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
     // MARK : Grab text and implement parsing method
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        if textField == textFieldOutlet {
+        let textField = textFieldOutlet
         
         textField.resignFirstResponder()
-        }
-        fetchArtist(self.textFieldOutlet.text!)
+        
         return true
         
     }
-    
+
     
     // MARK : Table View Methods
     
@@ -50,6 +47,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        fetchArtist(self.textFieldOutlet.text!)
         return self.artistArray.count
     }
     
