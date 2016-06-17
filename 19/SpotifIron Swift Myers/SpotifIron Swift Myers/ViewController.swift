@@ -18,9 +18,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var artistArray = [Artist]()
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,9 +27,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // MARK : Grab text and implement parsing method
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        let textField = textFieldOutlet
+        
         
         textField.resignFirstResponder()
+        
+        
+        //if let query = textField.text { }
+        //fetchArtist("U2")
+        
         
         return true
         
@@ -47,7 +49,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        fetchArtist(self.textFieldOutlet.text!)
+        
         return self.artistArray.count
     }
     
@@ -65,9 +67,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     
-    // MARk: Parsing Method
+    // MARK: Parsing Method
     
-    func fetchArtist (query : String) {
+    func fetchArtist(query : String) {
         
         let artistURLString = "https://api.spotify.com/v1/search?q=\(query)&type=artist"
         
@@ -94,6 +96,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                     
                                     for itemsDict in itemsArray  {
                                         
+                                        print("The item dict == \(itemsDict)")
+                                        
                                         let theArtist = Artist()
                                         
                                         if let name = itemsDict["name"] as? String {
@@ -108,7 +112,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                         } else {
                                             print("I could not parse the artistID")
                                         }
-                                        
                                         
                                         
                                        self.artistArray.append(theArtist)
