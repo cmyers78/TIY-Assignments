@@ -32,9 +32,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         textField.resignFirstResponder()
         
         
-        //if let query = textField.text { }
-        //fetchArtist("U2")
-        
+        if let query = textField.text {
+            print("The textfield value is \(query)")
+            
+            self.fetchArtist(query)
+        }
         
         return true
         
@@ -70,6 +72,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // MARK: Parsing Method
     
     func fetchArtist(query : String) {
+        
+        print("fetchArtist query value is \(query)")
+        
+        self.artistArray.removeAll()
         
         let artistURLString = "https://api.spotify.com/v1/search?q=\(query)&type=artist"
         
@@ -113,9 +119,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                             print("I could not parse the artistID")
                                         }
                                         
-                                        
                                        self.artistArray.append(theArtist)
                                     }
+                                    
+                                    print(self.artistArray.count)
+                                    
+                                    dispatch_async(dispatch_get_main_queue(), {
+                                        self.tableView.reloadData()
+                                    })
+                                    
+                                    
                                 } else {
                                     print("I could not parse the items")
                                 }
