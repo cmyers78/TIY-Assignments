@@ -59,15 +59,31 @@
 			isa = PBXGroup;
 			children = (
 				C6B7F63F1D135B6A003C0956 /* AppDelegate.swift */,
-				C6B7F6411D135B6A003C0956 /* ViewController.swift */,
-				C67200031D13996E00FC29DD /* Constants.swift */,
-				C67200051D1399C500FC29DD /* Artist.swift */,
+				C6ED6EBE1D14864C00A477C5 /* Controllers */,
+				C6ED6EBD1D14864300A477C5 /* Modal */,
 				C6B7F6431D135B6A003C0956 /* Main.storyboard */,
 				C6B7F6461D135B6A003C0956 /* Assets.xcassets */,
 				C6B7F6481D135B6A003C0956 /* LaunchScreen.storyboard */,
 				C6B7F64B1D135B6A003C0956 /* Info.plist */,
 			);
 			path = "SpotifIron Swift Myers";
+			sourceTree = "<group>";
+		};
+		C6ED6EBD1D14864300A477C5 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				C67200031D13996E00FC29DD /* Constants.swift */,
+				C67200051D1399C500FC29DD /* Artist.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		C6ED6EBE1D14864C00A477C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6B7F6411D135B6A003C0956 /* ViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
