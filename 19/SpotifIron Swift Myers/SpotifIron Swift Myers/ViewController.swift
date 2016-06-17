@@ -23,10 +23,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    // MARK : Grab text and implement parsing method
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == textFieldOutlet {
+        
+        textField.resignFirstResponder()
+        }
+        fetchArtist(self.textFieldOutlet.text!)
+        return true
+        
+    }
+    
+    
     // MARK : Table View Methods
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -34,13 +49,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        
+        return self.artistArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView .dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
+        let currentArtist = self.artistArray[indexPath.row]
+        
+        cell.textLabel?.text = currentArtist.name
         
         return cell
     }
