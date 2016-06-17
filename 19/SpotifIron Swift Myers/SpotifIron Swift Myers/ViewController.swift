@@ -98,11 +98,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                         
                                         if let name = itemsDict["name"] as? String {
                                             theArtist.name = name
-                                            
-                                            
+        
                                         } else {
                                             print("I could not parse the name")
                                         }
+                                        
+                                        if let artistID = itemsDict["id"] as? String {
+                                            theArtist.artistID = artistID
+                                        } else {
+                                            print("I could not parse the artistID")
+                                        }
+                                        
+                                        
                                         
                                        self.artistArray.append(theArtist)
                                     }
