@@ -28,7 +28,4 @@ class Artist: NSObject {
         self.uri = ""
         
     }
-    
-    
-    
 }

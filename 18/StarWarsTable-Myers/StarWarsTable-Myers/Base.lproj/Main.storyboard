@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tWB-c0-0om">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Star Wars Table View Controller-->
+        <scene sceneID="gUB-SW-Rpu">
+            <objects>
+                <tableViewController id="En2-Bu-0VL" customClass="StarWarsTableViewController" customModule="StarWarsTable_Myers" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="206" sectionHeaderHeight="28" sectionFooterHeight="28" id="F4Z-wn-9ll">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="206" id="IRg-9s-yq2" customClass="StarWarsTableViewCell" customModule="StarWarsTable_Myers" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="206"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IRg-9s-yq2" id="rme-q5-p4m">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="205.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sC7-B2-eqi">
+                                            <rect key="frame" x="8" y="8" width="140" height="189.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="140" id="fwl-En-JvC"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1K-cu-GBY">
+                                            <rect key="frame" x="156" y="8" width="436" height="46"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="46" id="ug0-Dg-g8r"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="25"/>
+                                            <color key="textColor" red="0.1218753492" green="0.15711459489999999" blue="0.76654532070000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="b1K-cu-GBY" secondAttribute="trailing" constant="8" id="5lK-i6-dRS"/>
+                                        <constraint firstItem="sC7-B2-eqi" firstAttribute="top" secondItem="rme-q5-p4m" secondAttribute="top" constant="8" id="BWT-ck-sQG"/>
+                                        <constraint firstItem="b1K-cu-GBY" firstAttribute="top" secondItem="rme-q5-p4m" secondAttribute="top" constant="8" id="ibq-yH-5tM"/>
+                                        <constraint firstItem="b1K-cu-GBY" firstAttribute="leading" secondItem="sC7-B2-eqi" secondAttribute="trailing" constant="8" id="osH-0u-lWl"/>
+                                        <constraint firstItem="sC7-B2-eqi" firstAttribute="leading" secondItem="rme-q5-p4m" secondAttribute="leading" constant="8" id="xxV-7p-EZY"/>
+                                        <constraint firstAttribute="bottom" secondItem="sC7-B2-eqi" secondAttribute="bottom" constant="8" id="yqB-IE-Mes"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="characterLabel" destination="b1K-cu-GBY" id="GmD-f1-yLc"/>
+                                    <outlet property="starWarsImageView" destination="sC7-B2-eqi" id="6YK-fx-37C"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="En2-Bu-0VL" id="igg-Lo-Ccj"/>
+                            <outlet property="delegate" destination="En2-Bu-0VL" id="z7N-n8-BNH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="IKv-lT-yUV"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57D-CL-xVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1091" y="313"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7lT-5c-ny5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tWB-c0-0om" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="75l-ur-lyv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="En2-Bu-0VL" kind="relationship" relationship="rootViewController" id="gsq-i6-C9p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FnH-z8-jdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279" y="313"/>
+        </scene>
+    </scenes>
+</document>
