@@ -17,6 +17,9 @@ class RestaurantTableViewController: UITableViewController {
     
     var restaurantTypes = ["Coffee & Tea Shop", "Cafe", "Tea House", "Austrian / Causual Drink", "French", "Bakery", "Bakery", "Chocolate", "Cafe", "American / Seafood", "American", "American", "Breakfast & Brunch", "Coffee & Tea", "Coffee & Tea", "Latin American", "Spanish", "Spanish", "Spanish", "British", "Thai"]
 
+    var restaurantIsVisted = [Bool](count: 21, repeatedValue: false)
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,6 +56,12 @@ class RestaurantTableViewController: UITableViewController {
         cell.locationLabel.text = restaurantLocations[indexPath.row]
         cell.typeLabel.text = restaurantTypes[indexPath.row]
         
+        if restaurantIsVisted[indexPath.row] {
+            cell.accessoryType = .Checkmark
+        } else {
+            cell.accessoryType = .None
+        }
+        
         return cell
     }
     
@@ -74,7 +83,21 @@ class RestaurantTableViewController: UITableViewController {
         
         optionMenu.addAction(callAction)
         
+        let isVisitedAction = UIAlertAction(title: "I've been here", style: .Default, handler: {
+            
+            (action: UIAlertAction) -> Void in
+            
+            let cell = tableView.cellForRowAtIndexPath(indexPath)
+            cell?.accessoryType = .Checkmark
+            self.restaurantIsVisted[indexPath.row] = true
+            
+        })
+        
+        optionMenu.addAction(isVisitedAction)
+        
         self.presentViewController(optionMenu, animated: true, completion: nil)
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
         
     }
     
