@@ -95,6 +95,19 @@ class RestaurantTableViewController: UITableViewController {
         
         optionMenu.addAction(isVisitedAction)
         
+        let didNotVisitAction = UIAlertAction(title: "I haven't been here", style: .Default, handler: {
+            
+            (action: UIAlertAction) -> Void in
+            
+            let cell = tableView.cellForRowAtIndexPath(indexPath)
+            cell?.accessoryType = .None
+            self.restaurantIsVisted[indexPath.row] = false
+            
+            
+        })
+        
+        optionMenu.addAction(didNotVisitAction)
+        
         self.presentViewController(optionMenu, animated: true, completion: nil)
         
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
