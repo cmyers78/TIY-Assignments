@@ -27,15 +27,25 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="R5o-YY-LEK">
                                 <rect key="frame" x="290" y="290" width="20" height="20"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deL-eh-dos">
+                                <rect key="frame" x="21" y="30" width="558" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="deL-eh-dos" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="21" id="JM4-yr-3Js"/>
                             <constraint firstItem="gAv-Ch-nV6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z70-tR-ZaF"/>
                             <constraint firstItem="gAv-Ch-nV6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZT9-Tt-IX7"/>
+                            <constraint firstItem="deL-eh-dos" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="fF2-KD-4Dq"/>
+                            <constraint firstAttribute="trailing" secondItem="deL-eh-dos" secondAttribute="trailing" constant="21" id="u8f-fM-nIR"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="R5o-YY-LEK" id="4uX-R4-ncr"/>
+                        <outlet property="imageNameLabel" destination="deL-eh-dos" id="HVj-yG-VFL"/>
                         <outlet property="imageView" destination="gAv-Ch-nV6" id="AqO-jF-qYh"/>
                     </connections>
                 </viewController>

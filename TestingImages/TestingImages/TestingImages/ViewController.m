@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
+@property (weak, nonatomic) IBOutlet UILabel *imageNameLabel;
 
 @end
 
@@ -113,6 +114,9 @@
     NSString * myURLString = [retrieveURL absoluteString];
     
     NSLog(myURLString);
+    
+    self.imageNameLabel.text = myURLString;
+    
     
     
 }
