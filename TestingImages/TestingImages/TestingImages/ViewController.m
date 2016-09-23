@@ -71,8 +71,13 @@
                 if (writeWasSuccessful) {
                     // Get the saved image data from the file.
                     NSData *imageData = [NSData dataWithContentsOfURL:saveLocation];
+                    
+  //                  NSString *stringData = [[NSString alloc] initWithData:imageData encoding:NSUTF8StringEncoding];
+                    
                     // Set the imageView's image to the image we just saved.
                     self.imageView.image = [UIImage imageWithData:imageData];
+  //                  self.imageNameLabel.text = stringData;
+                    
                     
                 } else {
                     NSLog(@"%@",[saveError localizedDescription]);
