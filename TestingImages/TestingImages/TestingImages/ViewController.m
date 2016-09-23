@@ -27,6 +27,9 @@
     
     [self displayPicture:@"https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAkHAAAAJGMxMGFkMTlhLTRiYmQtNDRmZS1iYjE4LWRiZWVmODc5NDU4OQ.jpg"];
     
+    [self loadImage];
+    
+    
     
 }
 
@@ -79,8 +82,6 @@
                 
                 [self.activityIndicator stopAnimating];
                 
-                
-                
             });
         }
     });
@@ -100,6 +101,22 @@
     }
     
     return url;
+}
+
+- (void) loadImage {
+    // go into documents directory and retrieve the URL
+    
+    NSURL * docDirectoryURL = [self documentsDirectoryURL];
+    
+    NSURL * retrieveURL = [docDirectoryURL URLByAppendingPathComponent:@"GCD.png"];
+    
+    // convert URL to string
+    
+    NSString * myURLString = [retrieveURL absoluteString];
+    
+    NSLog(myURLString);
+    
+    
 }
 
 
