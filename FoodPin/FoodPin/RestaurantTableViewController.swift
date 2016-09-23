@@ -73,6 +73,7 @@ class RestaurantTableViewController: UITableViewController {
         
         let callActionHandler = {(action: UIAlertAction) -> Void in
             let alertMessage = UIAlertController(title: "Service Unavailable", message: "Sorry.  The call feature is not available yet. Please try again", preferredStyle: .Alert)
+            
             alertMessage.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
             
             self.presentViewController(alertMessage, animated: true, completion: nil)
