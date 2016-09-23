@@ -16,9 +16,13 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *imageNameLabel;
 
+@property (weak, nonatomic) NSURL * testURL;
+
+
 @end
 
 @implementation ViewController
+
 
 
 - (void)viewDidLoad {
@@ -26,9 +30,15 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self.activityIndicator startAnimating];
     
-    [self displayPicture:@"https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAkHAAAAJGMxMGFkMTlhLTRiYmQtNDRmZS1iYjE4LWRiZWVmODc5NDU4OQ.jpg" fileNameDesired:@"GCD.png"];
+    //[self displayPicture:@"https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAkHAAAAJGMxMGFkMTlhLTRiYmQtNDRmZS1iYjE4LWRiZWVmODc5NDU4OQ.jpg" fileNameDesired:@"GCD.png"];
     
-    [self loadImage:@"GCD.png"];
+    //[self loadImage:@"GCD.png"];
+    
+    [self testingData:@"http://www.google.com"];
+    
+    
+    
+    
     
 }
 
@@ -123,6 +133,40 @@
     self.imageNameLabel.text = myURLString;
     
     
+    
+}
+
+- (void) testingData: (NSString *) urlString {
+    
+    NSURL * url = [[NSURL alloc]initWithString:urlString];
+    
+    // get html
+    NSString *rawHTML = [[NSString alloc] initWithContentsOfURL:url encoding:NSASCIIStringEncoding error:nil];
+    
+    // create data object to write a path to it.
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    
+    //use this data to write to any path as documentdirectory path + filename.html
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    //create file path
+    NSString *htmlFilePath = [documentsDirectory stringByAppendingPathComponent:@"file.html"];
+    //write at file path
+    BOOL isSucess = [data writeToFile:htmlFilePath atomically:YES];
+    if (isSucess)
+        NSLog(@"written");
+    else
+        NSLog(@"not written");
+    
+    
+    //NSString * dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    
+    NSLog(htmlFilePath);
+    NSLog(@" ");
+    NSLog(@" ");
+    NSLog(rawHTML);
+    
+
     
 }
 
