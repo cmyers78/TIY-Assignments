@@ -36,7 +36,7 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="R5o-YY-LEK" id="4uX-R4-ncr"/>
-                        <outlet property="imageView" destination="gAv-Ch-nV6" id="IgC-6s-6hd"/>
+                        <outlet property="imageView" destination="gAv-Ch-nV6" id="AqO-jF-qYh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

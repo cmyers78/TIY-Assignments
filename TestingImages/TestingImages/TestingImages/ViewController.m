@@ -11,7 +11,9 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+
 
 @end
 
@@ -23,9 +25,16 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self.activityIndicator startAnimating];
     
+    [self displayPicture:@"https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAkHAAAAJGMxMGFkMTlhLTRiYmQtNDRmZS1iYjE4LWRiZWVmODc5NDU4OQ.jpg"];
+    
+    
+}
+
+- (void) displayPicture: (NSString*) imageString {
+    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // Create the image URL from a known string.
-        NSURL *imageURL = [NSURL URLWithString:@"http://www.google.com/images/srpr/logo3w.png"];
+        NSURL *imageURL = [NSURL URLWithString:imageString];
         
         NSError *downloadError = nil;
         // Create an NSData object from the contents of the given URL.
@@ -62,6 +71,7 @@
                     NSData *imageData = [NSData dataWithContentsOfURL:saveLocation];
                     // Set the imageView's image to the image we just saved.
                     self.imageView.image = [UIImage imageWithData:imageData];
+                    
                 } else {
                     NSLog(@"%@",[saveError localizedDescription]);
                     // Something went wrong saving the file. Figure out what went wrong and handle the error.
@@ -74,14 +84,6 @@
             });
         }
     });
-    
-}
-
-
-- (void) viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    
     
 }
 
