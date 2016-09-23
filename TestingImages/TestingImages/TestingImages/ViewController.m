@@ -25,15 +25,13 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self.activityIndicator startAnimating];
     
-    [self displayPicture:@"https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAkHAAAAJGMxMGFkMTlhLTRiYmQtNDRmZS1iYjE4LWRiZWVmODc5NDU4OQ.jpg"];
+    [self displayPicture:@"https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAkHAAAAJGMxMGFkMTlhLTRiYmQtNDRmZS1iYjE4LWRiZWVmODc5NDU4OQ.jpg" fileNameDesired:@"GCD.png"];
     
-    [self loadImage];
-    
-    
+    [self loadImage:@"GCD.png"];
     
 }
 
-- (void) displayPicture: (NSString*) imageString {
+- (void) displayPicture: (NSString*) imageString fileNameDesired: (NSString *) fileName {
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // Create the image URL from a known string.
@@ -56,7 +54,7 @@
             // Get the path of the application's documents directory.
             NSURL *documentsDirectoryURL = [self documentsDirectoryURL];
             // Append the desired file name to the documents directory path.
-            NSURL *saveLocation = [documentsDirectoryURL URLByAppendingPathComponent:@"GCD.png"];
+            NSURL *saveLocation = [documentsDirectoryURL URLByAppendingPathComponent:fileName];
             
             NSError *saveError = nil;
             BOOL writeWasSuccessful = [imageData writeToURL:saveLocation
@@ -103,12 +101,12 @@
     return url;
 }
 
-- (void) loadImage {
+- (void) loadImage: (NSString*) imageName {
     // go into documents directory and retrieve the URL
     
     NSURL * docDirectoryURL = [self documentsDirectoryURL];
     
-    NSURL * retrieveURL = [docDirectoryURL URLByAppendingPathComponent:@"GCD.png"];
+    NSURL * retrieveURL = [docDirectoryURL URLByAppendingPathComponent:imageName];
     
     // convert URL to string
     
