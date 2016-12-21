@@ -16,11 +16,11 @@ class ViewController: UIViewController, UITextFieldDelegate
     @IBOutlet weak var currentSpeed: UILabel!
     
     // created date formatter
-    let formattedDate = NSDateFormatter()
+    let formattedDate = DateFormatter()
     
     // create global variable to use in any function
     var milesPerHour = 0
-    var timer:NSTimer?
+    var timer:Timer?
 
     override func viewDidLoad() {
         // create a date formatter and setting the format
@@ -29,9 +29,9 @@ class ViewController: UIViewController, UITextFieldDelegate
         // NSDate object to a string)
         super.viewDidLoad()
         self.formattedDate.dateFormat = "MMM d, yyyy"
-        let today : NSDate = NSDate()
+        let today : Date = Date()
         //print(today)
-        self.presentTime.text = self.formattedDate.stringFromDate(today)
+        self.presentTime.text = self.formattedDate.string(from: today)
     
     }
     
@@ -50,16 +50,16 @@ class ViewController: UIViewController, UITextFieldDelegate
         if let dateEntered = self.enterDestination.text
         {
             
-            if let theDate = self.formattedDate.dateFromString(dateEntered)
+            if let theDate = self.formattedDate.date(from: dateEntered)
             {
         
                 self.formattedDate.dateFormat = "MMM d, yyyy"
-                self.enterDestination.text = self.formattedDate.stringFromDate(theDate)
+                self.enterDestination.text = self.formattedDate.string(from: theDate)
             }
         }
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
         enteredDate()
         self.enterDestination.resignFirstResponder()
@@ -74,7 +74,7 @@ class ViewController: UIViewController, UITextFieldDelegate
         if milesPerHour == 88
         {
             self.timer?.invalidate()
-            self.performSegueWithIdentifier("popupSegue", sender: self)
+            self.performSegue(withIdentifier: "popupSegue", sender: self)
         }
             self.currentSpeed.text = "\(milesPerHour) MPH"
         
@@ -88,7 +88,7 @@ class ViewController: UIViewController, UITextFieldDelegate
         milesPerHour = 0
     }
     
-    @IBAction func unwindSegue (segue: UIStoryboardSegue)
+    @IBAction func unwindSegue (_ segue: UIStoryboardSegue)
     {
         reset()
     }
@@ -99,13 +99,13 @@ class ViewController: UIViewController, UITextFieldDelegate
     // or in the button action. We're doing it in the button
     
     
-    @IBAction func travelBackPressed(sender: UIButton)
+    @IBAction func travelBackPressed(_ sender: UIButton)
     {
         self.lastTimeDeparted.text = self.presentTime.text
         self.milesPerHour = 0
         let speed = 0.1
         
-         self.timer = NSTimer.scheduledTimerWithTimeInterval(speed, target: self, selector: #selector(updateMiles), userInfo: nil, repeats: true);
+         self.timer = Timer.scheduledTimer(timeInterval: speed, target: self, selector: #selector(updateMiles), userInfo: nil, repeats: true);
     }
 
 }
